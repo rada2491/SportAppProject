@@ -32,6 +32,6 @@ const items = [
   }
 ];
 
-const Carousel = () => <UncontrolledCarousel  className='offset-md-2 col-md-8 carouselImg'  items={items} />;
+const Carousel = () => <UncontrolledCarousel  className='offset-md-1 col-md-10 carouselImg'  items={items} />;
 
 export default Carousel;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from '../../components/main/Carousel/';
 import Aside from '../../components/main/Aside/';
+import Card from '../../components/main/Cards/';
 
 const API = 'http://api.football-data.org/v1/soccerseasons';
 
@@ -16,7 +17,7 @@ class Home extends Component {
 
     componentDidMount() {
         fetch(API)
-            .then(res => res.json())            
+            .then(res => res.json())
             .then(date => {
                 this.setState({
                     isLoaded: true,
@@ -29,10 +30,20 @@ class Home extends Component {
 
         const { isLoaded, items } = this.state;
         return (
-            <div>
-                <Carousel />
-                <Aside item={this.state.items} />
+            <div className='container-fluid'>
+                <div className="row">
+                    <Carousel />
+                    <div className="row">
+                        <div className="col-md-3">
+                            <Aside item={this.state.items} />
+                        </div>
+                        <div className="offset-md-1 col-md-7">
+                            <Card />
+                        </div>
 
+                    </div>
+
+                </div>
             </div>
         )
     }
