@@ -1,0 +1,25 @@
+
+.carousel-indicators li {
+     background: #333;
+}
+
+.carousel-control-prev-icon:after{
+    content: '<';
+    font-size: 55px;
+    color: #333;
+}
+
+.carousel-control-next-icon:after{
+    content: '>';
+    font-size: 55px;
+    color: #333;
+}
+.carouselImg {
+    img {
+        margin: auto auto 60px;
+        width: 60% !important;
+        height:180px;
+        border-radius: 10px;
+        background: #fff;
+    }
+}

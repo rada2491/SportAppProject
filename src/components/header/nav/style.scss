@@ -1,0 +1,19 @@
+.SA-header {
+    background: rgb(65, 63, 63);
+    height: 64px;
+    margin-bottom: 35px;
+
+    &__logo {
+        height: 62px;
+    }
+
+    &__nav {
+        display: inline-block;
+    }
+
+    &__nav-item{
+        display: inline-block;
+        padding-left: 15px;
+    }
+}
+
