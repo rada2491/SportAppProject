@@ -53,7 +53,7 @@ class App extends Component {
             <Header />
             <div className="container-fluid">
               <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-2">
                   <Aside item={this.state.items} />
                 </div>
                 <div className="col-md-9">

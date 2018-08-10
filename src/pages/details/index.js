@@ -23,15 +23,12 @@ class Details extends Component {
   componentDidMount() {
     const { url } = this.props.location.state
     const ref = add + url + gg
-    console.log(ref)
     fetch(ref, {
       method: 'GET',
       headers: myHeaders
     })
       .then(res => res.json())
       .then(date => {
-
-
         this.setState({
           isLoaded: true,
           items: date.standing,
@@ -44,15 +41,12 @@ class Details extends Component {
     var id = newProps.location.state.url
     if (id !== this.props.location.state) {
       const ref = add + id + gg
-      console.log('hola')
       fetch(ref, {
         method: 'GET',
         headers: myHeaders
       })
         .then(res => res.json())
         .then(date => {
-          console.log(date.standing)
-
           this.setState({
             isLoaded: true,
             items: date.standing,
