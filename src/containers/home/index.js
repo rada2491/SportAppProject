@@ -4,12 +4,34 @@ import Aside from '../../components/main/Aside/';
 import Card from '../../components/main/Cards/';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      isLoaded: false,
+    }
+  }
+
+  componentDidMount() {
+    fetch('../../../database/news.json')
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        this.setState({
+          isLoaded: true,
+          items: data,
+        })
+      });
+  }
+
   render() {
+
+    const { items } = this.state;
     return (
       <div className='container-fluid'>
         <div className="row">
           <Carousel />
-          <Card />
+          <Card cards={this.state.items} />
         </div>
       </div>
     )
