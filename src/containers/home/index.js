@@ -24,11 +24,10 @@ class Home extends Component {
   }
 
   render() {
-
     const { items } = this.state;
     return (
-      <div className='container-fluid'>
-        <div className="row">
+      <div className='container-fluid cbp-spmenu-push' id='contHome'>
+        <div>
           <Carousel />
           <Card cards={this.state.items} />
         </div>

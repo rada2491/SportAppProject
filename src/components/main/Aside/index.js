@@ -2,15 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
+import classie from './js/classie';
 import './style.scss';
 
-const Aside = ({ item }) => {
+/*const Aside = ({ item }) => {
   return (
     <div>
-      <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
+      <Button color='primary' id='toggler' style={{ marginBottom: '1rem' }}>
         Toggle
   </Button>
-      <UncontrolledCollapse toggler="#toggler">
+      <UncontrolledCollapse toggler='#toggler'>
         <aside>
           <ListGroup>
             {
@@ -25,35 +26,93 @@ const Aside = ({ item }) => {
   )
 }
 
-export default Aside;
+export default Aside;*/
 
 
-/*import React from 'react';
-import { ListGroup, ListGroupItem } from 'reactstrap';
+/*const Aside = ({ item }) => {
+  return (
+    <div>
+      <div className='main'>
+        <section className='buttonset'>
+          <button id='showLeftPush'>Show/Hide Left Push Menu</button>
+        </section>
+      </div>
+      <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
+        <h3>Menu</h3>
+        {
+          item.map(item => (
+            <Link to={{ pathname: `/details/${item.id}`, state: { url: item.id } }}>{item.caption}</Link>
+          ))
+        }
+      </nav>
+    </div>
+  )
+}
 
-export default class Example extends React.Component {
+prueba = () => {
+  var menuLeft = document.getElementById('cbp-spmenu-s1'),
+    showLeftPush = document.getElementById('showLeftPush'),
+    body = document.body;
+}
+
+
+showLeftPush.onclick = function () {
+  classie.toggle(this, 'active');
+  classie.toggle(body, 'cbp-spmenu-push-toright');
+  classie.toggle(menuLeft, 'cbp-spmenu-open');
+  disableOther('showLeftPush');
+};
+
+export default Aside;*/
+
+
+class Aside extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false,
+      items: this.props.item,
+      site: ''
+    }
+    console.log(this.state.items)
+  }
+
+
+
+  /*componentDidMount() {
+    var menuLeft = document.getElementById('cbp-spmenu-s1'),
+      showLeftPush = document.getElementById('showLeftPush');
+
+    showLeftPush.onclick = function () {
+
+      if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
+        //menuLeft.classList.remove('cbp-spmenu-left')
+        menuLeft.classList.add('cbp-spmenu-open')
+      } else {
+        menuLeft.classList.remove('cbp-spmenu-open')
+      }
+
+
+    };
+  }*/
+
   render() {
+    const { items } = this.state;
     return (
       <div>
-        <h3>Anchors </h3>
-        <p>Be sure to <strong>not use the standard <code>.btn</code> classes here</strong>.</p>
-        <ListGroup>
-          <ListGroupItem active tag="a" href="#" action>Cras justo odio</ListGroupItem>
-          <ListGroupItem tag="a" href="#" action>Dapibus ac facilisis in</ListGroupItem>
-          <ListGroupItem tag="a" href="#" action>Morbi leo risus</ListGroupItem>
-          <ListGroupItem tag="a" href="#" action>Porta ac consectetur ac</ListGroupItem>
-          <ListGroupItem disabled tag="a" href="#" action>Vestibulum at eros</ListGroupItem>
-        </ListGroup>
-        <p />
-        <h3>Buttons </h3>
-        <ListGroup>
-          <ListGroupItem active tag="button" action>Cras justo odio</ListGroupItem>
-          <ListGroupItem tag="button" action>Dapibus ac facilisis in</ListGroupItem>
-          <ListGroupItem tag="button" action>Morbi leo risus</ListGroupItem>
-          <ListGroupItem tag="button" action>Porta ac consectetur ac</ListGroupItem>
-          <ListGroupItem disabled tag="button" action>Vestibulum at eros</ListGroupItem>
-        </ListGroup>
+        <div className='main'>
+        </div>
+        <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
+          <h3>International Leagues</h3>
+          {
+            items.map(items => (
+              <Link to={{ pathname: `/details/${items.id}`, state: { url: items.id } }}>{items.caption}</Link>
+            ))
+          }
+        </nav>
       </div>
     );
   }
-}*/
+}
+
+export default Aside;

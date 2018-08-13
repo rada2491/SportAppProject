@@ -35,11 +35,13 @@ class Details extends Component {
           site: ref
         })
       });
+
+
   }
 
   componentWillReceiveProps(newProps) {
     var id = newProps.location.state.url
-    if (id !== this.props.location.state) {
+    if (id !== this.props.location.state.url) {
       const ref = add + id + gg
       fetch(ref, {
         method: 'GET',
@@ -50,7 +52,7 @@ class Details extends Component {
           this.setState({
             isLoaded: true,
             items: date.standing,
-          }, () => { this.forceUpdate() })
+          })
         });
     }
 
@@ -59,7 +61,7 @@ class Details extends Component {
   render() {
     const { site, items } = this.state;
     return (
-      <div>
+      <div className='cbp-spmenu-push' id='contDetail'>
         <LeagueTable state={this.state.items} />
       </div>
     );

@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/nav/'
 import Aside from './components/main/Aside/'
 import Loading from './pro'
+import Footer from './components/footer/'
+
+import './scss/main.scss';
 
 /* pages */
 import Home from './pages/home/'
@@ -36,9 +39,10 @@ class App extends Component {
     })
       .then(res => res.json())
       .then(data => {
+        var finalData = data.slice(0, 13);
         this.setState({
           isLoaded: true,
-          items: data,
+          items: finalData,
         })
       });
   }
@@ -56,7 +60,7 @@ class App extends Component {
                 <div className="col-md-2">
                   <Aside item={this.state.items} />
                 </div>
-                <div className="col-md-9">
+                <div className="offset-md-1 col-md-10">
                   <main>
                     <Route exact path='/' component={Home} />
                     <Route path='/details/:id' component={Details2} />
@@ -64,6 +68,7 @@ class App extends Component {
                 </div>
               </div>
             </div>
+            <Footer />
           </div>
         </BrowserRouter>
       )
@@ -80,3 +85,22 @@ class App extends Component {
 }
 
 export default App;
+
+
+/*<div className="App">
+            <Header />
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-md-2">
+                  <Aside item={this.state.items} />
+                </div>
+                <div className="offset-md-1 col-md-10">
+                  <main>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/details/:id' component={Details2} />
+                  </main>
+                </div>
+              </div>
+            </div>
+            <Footer />
+          </div>*/
