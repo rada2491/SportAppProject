@@ -48,7 +48,6 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="https://www.facebook.com/carlos.bonillarobles">
-                      <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                     </a>
                   </li>
                 </ul>

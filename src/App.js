@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+/* Font Awesome*/
+
 import Header from './components/header/nav/'
 import Aside from './components/main/Aside/'
 import Loading from './pro'
