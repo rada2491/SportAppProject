@@ -15,6 +15,9 @@ import './scss/main.scss';
 import Home from './pages/home/'
 import Details from './pages/details/'
 
+/* Loading Image */
+import LoadingImage from './LoadingImage.png';
+
 
 const API = 'http://api.football-data.org/v1/soccerseasons';
 
@@ -76,9 +79,10 @@ class App extends Component {
     } else {
       return (
         <div>
-          <Loading />
-          <h1>Loading Data</h1>
+          <img className='logo-centered'src={LoadingImage} alt=""/>
+          <div className="lds-roller centered"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
+
       )
     }
 

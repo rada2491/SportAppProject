@@ -18,7 +18,7 @@ class Home extends Component {
         console.log(data)
         this.setState({
           isLoaded: true,
-          items: data,
+          items: data.news,
         })
       });
   }
