@@ -55,7 +55,6 @@ class Details extends Component {
           })
         });
     }
-
   }
 
   render() {

@@ -11,8 +11,7 @@ import './scss/main.scss';
 
 /* pages */
 import Home from './pages/home/'
-import Details from './components/main/Table/'
-import Details2 from './pages/details/'
+import Details from './pages/details/'
 
 
 const API = 'http://api.football-data.org/v1/soccerseasons';
@@ -63,7 +62,7 @@ class App extends Component {
                 <div className="offset-md-1 col-md-10">
                   <main>
                     <Route exact path='/' component={Home} />
-                    <Route path='/details/:id' component={Details2} />
+                    <Route path='/details/:id' component={Details} />
                   </main>
                 </div>
               </div>
@@ -85,22 +84,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-/*<div className="App">
-            <Header />
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-md-2">
-                  <Aside item={this.state.items} />
-                </div>
-                <div className="offset-md-1 col-md-10">
-                  <main>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/details/:id' component={Details2} />
-                  </main>
-                </div>
-              </div>
-            </div>
-            <Footer />
-          </div>*/

@@ -66,7 +66,7 @@ export default class Header extends React.Component {
                   <img className='SA-header__container-logo' src={logo} alt="" />
                 </div>
                 <div className="col-md-9 col-sm-9 col-xs-9">
-                  <Nav className='SA-header__nav'>
+                  <Nav className='SA-header__nav d-flex justify-content-around'>
                     <li><Link className="SA-header__nav-item" to='/'>Home</Link></li>
                     <li><a className="SA-header__nav-item" id='showLeftPushe' to='#'>Leagues</a></li>
                     <li><a className="SA-header__nav-item">Videos</a></li>

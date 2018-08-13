@@ -7,7 +7,7 @@ import './style.scss';
 
 const Cards = ({ cards }) => {
   return (
-    <CardDeck>
+    <CardDeck className='d-flex justify-content-around'>
       {
         cards.map(cards => (
           <Card key={cards.id}>
