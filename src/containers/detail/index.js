@@ -17,7 +17,6 @@ class Details extends Component {
       items: [],
       site: ''
     }
-
   }
 
   componentDidMount() {
@@ -35,8 +34,6 @@ class Details extends Component {
           site: ref
         })
       });
-
-
   }
 
   componentWillReceiveProps(newProps) {
