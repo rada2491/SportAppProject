@@ -7,7 +7,6 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 import Header from './components/header/nav/'
 import Aside from './components/main/Aside/'
-import Loading from './pro'
 import Footer from './components/footer/'
 
 import './scss/main.scss';
