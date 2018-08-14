@@ -3,19 +3,19 @@
         {
             "id": 1,
             "title": "Chelsea and Real Madrid agree fee for transfer of goalkeeper Thibaut Courtois",
-            "content": "Thibaut Courtois is set for a move from Chelsea to Real Madrid pending a medical, after the clubs announced they had agreed to a deal on Wednesday.",
+            "content": "Thibaut Courtois is set for a move from Chelsea to Real Madrid pending a medical, after the clubs announced they had agreed to a deal on Wednesday. According to sources, Real Madrid will pay Chelsea £35 million (€38.8m, $45m) for the Belgium international. The deal will also see midfielder Mateo Kovacic join the Blues on a season-long loan. Chelsea have already moved to replace Courtois, activating the €80m (£71.5m) buyout clause in the contract of Athletic Bilbao goalkeeper Kepa Arrizabalaga, making him the world's most expensive goalkeeper.",
             "cardImage": "../src/components/main/Cards/cort.jpg"
         },
         {
             "id": 2,
             "title": "Barcelona's signing of Arturo Vidal fails to impress as concerns persist",
-            "content": "Arturo Vidal arrived in Spain on Sunday to pose for photographs for the first time since agreeing to become a Barcelona player.",
+            "content": "Arturo Vidal arrived in Spain on Sunday to pose for photographs for the first time since agreeing to become a Barcelona player.  The Chilean had a big smile across his face as he stuck his thumbs up for the camera, but it's not a signing which has been universally celebrated. Vidal joins Barca from Bayern Munich for around €20 million. If you look it has CV, it looks like a good deal. Some, though, disagree.",
             "cardImage": "../src/components/main/Cards/vidal.jpg"
         },
         {
             "id": 3,
             "title": "Jose Mourinho, Manchester United must move past difficult preseason",
-            "content": "Manchester United's players left Bayern Munich's Allianz Arena late on Sunday with more urgency than they had shown on the pitch in the team's soporific 1-0 friendly defeat to the German champions.",
+            "content": "Manchester United's players left Bayern Munich's Allianz Arena late on Sunday with more urgency than they had shown on the pitch in the team's soporific 1-0 friendly defeat to the German champions.With a chartered aircraft needing to take off by midnight to avoid the team having to stay in Germany overnight, only Phil Jones stopped to talk to the few English journalists who travelled to Bavaria, while Jose Mourinho didn't do his normal post-match press conference.",
             "cardImage": "../src/components/main/Cards/manU.png"
         }
     ]
