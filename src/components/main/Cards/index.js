@@ -6,6 +6,7 @@ import {
 import './style.scss';
 
 const Cards = ({ cards }) => {
+  
   return (
     <CardDeck className='d-flex justify-content-around'>
       {

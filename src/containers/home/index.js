@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Carousel from '../../components/main/Carousel/';
 import Card from '../../components/main/Cards/';
 
+
+const API = 'http://localhost:3000/news'
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -12,19 +15,20 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch('../../../database/news.json')
+    fetch(API)
       .then(res => res.json())
       .then(data => {
         console.log(data)
         this.setState({
           isLoaded: true,
-          items: data.news,
+          items: data,
         })
       });
   }
 
   render() {
     const { items } = this.state;
+    console.log('hi'+ this.state.items)
     return (
       <div className='container-fluid cbp-spmenu-push' id='contHome'>
         <div>

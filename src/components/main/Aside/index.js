@@ -106,7 +106,7 @@ class Aside extends React.Component {
           <h3>International Leagues</h3>
           {
             items.map(items => (
-              <Link to={{ pathname: `/details/${items.id}`, state: { url: items.id } }}>{items.caption}</Link>
+              <Link key={items.id} to={{ pathname: `/details/${items.id}`, state: { url: items.id } }}>{items.caption}</Link>
             ))
           }
         </nav>

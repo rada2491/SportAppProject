@@ -1,31 +1,37 @@
 import React from 'react';
-import { Table } from 'reactstrap';
+import BootstrapTable from 'react-bootstrap-table-next';
 
-const LeagueTable = ({ state }) => {
+
+
+const columns = [{
+  dataField: 'position',
+  text: 'Position'
+}, {
+  dataField: 'teamName',
+  text: 'Team Name',
+  sort: true
+}, {
+  dataField: 'points',
+  text: 'Points',
+  sort: true
+},{
+  dataField: 'wins',
+  text: 'Wins',
+  sort: true
+},{
+  dataField: 'goals',
+  text: 'Goals',
+  sort: true
+},{
+  dataField: 'goalsAgainst',
+  text: 'Goals Against',
+  sort: true
+}];
+
+export default ({ state }) => {
+  const products = state
   return (
-    <Table bordered>
-      <thead>
-        <tr>
-          <th>Position</th>
-          <th>Team Name</th>
-          <th>Points</th>
-          <th>Played Games</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          state.map(state => (
-            <tr key={state.position}>
-              <td>{state.position}</td>
-              <td>{state.teamName}</td>
-              <td>{state.points}</td>
-              <td>{state.playedGames}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </Table>
-  );
+    <BootstrapTable keyField='id' data={products} columns={columns} />
+  )
 }
 
-export default LeagueTable;
