@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import LeagueTable from '../../components/main/Table/'
 
 var add = 'http://api.football-data.org/v1/soccerseasons/'
@@ -66,5 +67,11 @@ class Details extends Component {
     );
   }
 }
+
+const mapDispatchToPropsActions = distpach => ({
+  items: value => distpach(items)
+});
+
+const DetailsConnected = connect(null, mapDispatchToPropsActions)(Details);
 
 export default Details;
