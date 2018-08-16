@@ -4,3 +4,5 @@ import Reducer from "../reducers/"
 const store = createStore(Reducer);
 
 export default store;
+
+//apply hace un function composition

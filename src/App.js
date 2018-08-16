@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';

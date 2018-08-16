@@ -39,27 +39,22 @@ class Cards extends React.Component {
 
   render() {
     const { data } = this.state;
+    const { news } = this.props
     return (
-      <CardDeck className='d-flex justify-content-around SA-CardDeck'>
-        {
-          this.props.cards.map(cards => (
-            <div>
-              <Card key={cards.id} id={cards.id} className='SA-CardDeck__card'>
-                <CardImg top src={cards.cardImage} alt="Card image cap" />
-                <CardBody>
-                  <CardTitle>{cards.title}</CardTitle>
-                  <Button
-                    id='lastIndex'
-                    value={cards.id}
-                    onClick={() => this.toggle(cards.id)}
-                    color="primary" size="sm">
-                    Details</Button>
-                  <br />
-                </CardBody>
-              </Card>
-            </div>
-          ))
-        }
+      <div>
+          <Card key={news.id} id={news.id} className='SA-CardDeck__card'>
+            <CardImg top src={news.cardImage} alt="Card image cap" />
+            <CardBody>
+              <CardTitle>{news.title}</CardTitle>
+              <Button
+                id='lastIndex'
+                value={news.id}
+                onClick={() => this.toggle(news.id)}
+                color="primary" size="sm">
+                Details</Button>
+              <br />
+            </CardBody>
+          </Card>
         <Modal isOpen={this.state.modal} modalTransition={{ timeout: 100 }} backdropTransition={{ timeout: 200 }}
           toggle={this.toggle} className={this.props.className}>
           <CardImg top width="100%" src={data.cardImage} alt="Card image cap" />
@@ -71,7 +66,7 @@ class Cards extends React.Component {
             <Button color="primary" onClick={this.toggle}>Close</Button>
           </ModalFooter>
         </Modal>
-      </CardDeck>
+        </div>
     );
   }
 };
