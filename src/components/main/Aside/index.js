@@ -14,20 +14,14 @@ import './style.scss';
 
   render() {
     const { items } = this.state;*/
-const Aside = ({ item }) => {
+const Aside = ({items}) => {
+  //const { items } = this.props
   return (
-    <div>
-      <div className='main'>
-      </div>
-      <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
-        <h3>International Leagues</h3>
-        {
-          item.map(items => (
-            <Link key={items.id} to={{ pathname: `/details/${items.id}`, state: { url: items.id } }}>{items.caption}</Link>
-          ))
-        }
-      </nav>
-    </div>
+
+
+    <Link key={items.id} to={{ pathname: `/details/${items.id}`, state: { url: items.id } }}>{items.caption}</Link>
+
+
   );
 }
 

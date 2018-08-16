@@ -1,22 +1,22 @@
 import * as a from '../actions/types'
 
 const INITIAL_STATE = {
-  news: [],
-  isLoaded: false
+  isLoaded: false,
+  leagues: []
 }
 
-export default function newsReducer(state = INITIAL_STATE, action) {
+export default function asideReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case a.NEWS_GETALL_REQUEST:
+    case a.ASIDE_GETALL_REQUEST:
       return {
         ...state,
         isLoaded: false
       }
-    case a.NEWS_GETALL_SUCCESS:
+    case a.ASIDE_GETALL_SUCCESS:
       return {
         ...state,
         isLoaded: true,
-        news: action.payload
+        leagues: action.payload
       }
     default:
       return state

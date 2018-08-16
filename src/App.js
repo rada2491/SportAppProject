@@ -1,6 +1,8 @@
 import 'babel-polyfill'
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import { BrowserRouter, Route } from 'react-router-dom'
+import { map } from 'ramda'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
@@ -20,6 +22,10 @@ import Details from './pages/details/'
 /* Loading Image */
 import LoadingImage from './LoadingImage.png';
 
+/* Action creator */
+
+import getAllLeagues from './redux/actionCreatos/aside';
+
 
 const API = 'http://api.football-data.org/v1/soccerseasons';
 
@@ -29,17 +35,23 @@ var myHeaders = new Headers({
 });
 
 class App extends Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
     this.state = {
       items: [],
       isLoaded: false,
     }
 
+  }*/
+
+  static defaultProps = {
+    items: [],
+    isLoaded: false,
+    getAllLeagues: () => { }
   }
 
-  componentDidMount() {
-    fetch(API, {
+  async componentDidMount() {
+    /*fetch(API, {
       method: 'GET',
       headers: myHeaders
     })
@@ -50,13 +62,17 @@ class App extends Component {
           isLoaded: true,
           items: finalData,
         })
-      });
+      });*/
+    this.props.getAllLeagues()
   }
 
-  render() {
+  newLinkAside = aside => <Aside key={aside.id} items={aside} />
 
-    const { isLoaded, items } = this.state;
-    if (isLoaded) {
+  render() {
+    //<Aside item={this.state.items} />
+    const { isLoaded, items } = this.props;
+    console.log(this.props.isLoaded)
+    if (this.props.isLoaded) {
       return (
         <BrowserRouter>
           <div className="App">
@@ -64,7 +80,14 @@ class App extends Component {
             <div className="container-fluid">
               <div className="row">
                 <div className="col-md-2">
-                  <Aside item={this.state.items} />
+                  <div>
+                    <div className='main'>
+                    </div>
+                    <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
+                      <h3>International Leagues</h3>
+                      {map(this.newLinkAside, items)}
+                    </nav>
+                  </div>
                 </div>
                 <div className="offset-md-1 col-md-10">
                   <main>
@@ -81,7 +104,7 @@ class App extends Component {
     } else {
       return (
         <div>
-          <img className='logo-centered'src={LoadingImage} alt=""/>
+          <img className='logo-centered' src={LoadingImage} alt="" />
           <div className="lds-roller centered"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
 
@@ -91,4 +114,13 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  items: state.aside.leagues,
+  isLoaded: state.aside.isLoaded
+})
+
+const mapDispatchToProps = {
+  getAllLeagues
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
