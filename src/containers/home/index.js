@@ -3,7 +3,7 @@ import Carousel from '../../components/main/Carousel/';
 import Card from '../../components/main/Cards/';
 
 
-const API = 'http://localhost:3000/news'
+const API = 'http://localhost:3000/news/'
 
 class Home extends Component {
   constructor(props) {
@@ -18,7 +18,6 @@ class Home extends Component {
     fetch(API)
       .then(res => res.json())
       .then(data => {
-        console.log(data)
         this.setState({
           isLoaded: true,
           items: data,
@@ -28,7 +27,6 @@ class Home extends Component {
 
   render() {
     const { items } = this.state;
-    console.log('hi'+ this.state.items)
     return (
       <div className='container-fluid cbp-spmenu-push' id='contHome'>
         <div>

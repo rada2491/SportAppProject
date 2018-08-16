@@ -17,6 +17,7 @@
         width: 100%;
         list-style: none;
         padding-top: 22px;
+        float: right;
     }
 
     &__nav-item{
@@ -29,6 +30,10 @@
     &__nav-item:hover {
         color: #000 !important;
         text-decoration: underline !important;
+    }
+
+    &__modal {
+        padding: 10px;
     }
 }
 
