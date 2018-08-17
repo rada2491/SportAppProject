@@ -35,14 +35,6 @@ var myHeaders = new Headers({
 });
 
 class App extends Component {
-  /*constructor(props) {
-    super(props);
-    this.state = {
-      items: [],
-      isLoaded: false,
-    }
-
-  }*/
 
   static defaultProps = {
     items: [],
@@ -51,25 +43,12 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    /*fetch(API, {
-      method: 'GET',
-      headers: myHeaders
-    })
-      .then(res => res.json())
-      .then(data => {
-        var finalData = data.slice(0, 13);
-        this.setState({
-          isLoaded: true,
-          items: finalData,
-        })
-      });*/
     this.props.getAllLeagues()
   }
 
   newLinkAside = aside => <Aside key={aside.id} items={aside} />
 
   render() {
-    //<Aside item={this.state.items} />
     const { isLoaded, items } = this.props;
     console.log(this.props.isLoaded)
     if (this.props.isLoaded) {
@@ -107,10 +86,8 @@ class App extends Component {
           <img className='logo-centered' src={LoadingImage} alt="" />
           <div className="lds-roller centered"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
-
       )
     }
-
   }
 }
 
