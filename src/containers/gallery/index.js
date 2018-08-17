@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LeagueGallery from '../../components/main/Gallery/'
 
-class GalleryPage extends Component {
+class Gallery extends Component {
 
   constructor(props) {
     super(props);
@@ -16,7 +16,7 @@ class GalleryPage extends Component {
       photos: photoAlbum
     })
   }
-  //<LeagueGallery album={this.state.photos}/>
+  
   render() {
     const { photos } = this.state
     console.log(photos)
@@ -30,4 +30,4 @@ class GalleryPage extends Component {
 
 
 
-export default GalleryPage;
+export default Gallery;

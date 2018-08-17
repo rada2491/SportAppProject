@@ -125,7 +125,7 @@ export default class Header extends React.Component {
                     <li><Link className="SA-header__nav-item" to='/'>Home</Link></li>
                     <li><a className="SA-header__nav-item" id='showLeftPushe' to='#'>Leagues</a></li>
                     <li><a className="SA-header__nav-item">Videos</a></li>
-                    <li><Link className="SA-header__nav-item" to='/gallery'>Gallery</Link></li>
+                    <li><Link className="SA-header__nav-item" to='/albums'>Album</Link></li>
                     <li><a className="SA-header__nav-item">About</a></li>
                   </Nav>
                 </div>

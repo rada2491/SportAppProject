@@ -37,12 +37,12 @@
       "id": 5
     }
   ],
-  "Gallery": [
+  "album": [
     {
       "name": "Premier League",
       "id": 0,
-      "logo": "../src/components/main/Gallery/premier.png",
-      "Photos": [
+      "logo": "../src/components/main/Album/premier.png",
+      "photos": [
         {
           "id": 0,
           "src": "../src/components/main/Cards/barcaBoca.jpg",
@@ -72,7 +72,7 @@
     {
       "name": "Serie A",
       "id": 1,
-      "logo": "../src/components/main/Gallery/serieA.png",
+      "logo": "../src/components/main/Album/serieA.png",
       "photos": [
         {
           "id": 0,
@@ -103,7 +103,7 @@
     {
       "name": "League BBVA",
       "id": 2,
-      "logo": "../src/components/main/Gallery/bbva.jpg",
+      "logo": "../src/components/main/Album/bbva.jpg",
       "photos": [
         {
           "id": 0,
@@ -134,7 +134,7 @@
     {
       "name": "Eredivisie",
       "id": 3,
-      "logo": "../src/components/main/Gallery/eredivisie.jpg",
+      "logo": "../src/components/main/Album/eredivisie.jpg",
       "photos": [
         {
           "id": 0,
@@ -165,7 +165,7 @@
     {
       "name": "Bundesliga",
       "id": 4,
-      "logo": "../src/components/main/Gallery/bundesliga.png",
+      "logo": "../src/components/main/Album/bundesliga.png",
       "photos": [
         {
           "id": 0,
@@ -196,7 +196,7 @@
     {
       "name": "Bundesliga",
       "id": 5,
-      "logo": "../src/components/main/Gallery/bundesliga.png",
+      "logo": "../src/components/main/Album/bundesliga.png",
       "photos": [
         {
           "id": 0,

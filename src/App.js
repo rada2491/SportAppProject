@@ -19,7 +19,8 @@ import './scss/main.scss';
 /* pages */
 import Home from './pages/home/'
 import Details from './pages/details/'
-import Gallery from './pages/gallery'
+import Album from './pages/album/'
+import Gallery from './pages/gallery/'
 
 /* Loading Image */
 import LoadingImage from './LoadingImage.png';
@@ -75,7 +76,8 @@ class App extends Component {
                   <main>
                     <Route exact path='/' component={Home} />
                     <Route path='/details/:id' component={Details} />
-                    <Route path='/gallery' component={Gallery} />
+                    <Route path='/albums' component={Album} />
+                    <Route path='/gallery/:id' component={Gallery} />
                   </main>
                 </div>
               </div>
