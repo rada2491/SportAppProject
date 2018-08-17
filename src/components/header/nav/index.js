@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Form, FormGroup, Label, Modal, Col, Input, Button, Nav } from 'reactstrap';
+import { Form, FormGroup, Label, Modal, Col, Input, Button, Nav, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './style.scss';
 
 import logo from './logo.png';
@@ -125,7 +125,7 @@ export default class Header extends React.Component {
                     <li><Link className="SA-header__nav-item" to='/'>Home</Link></li>
                     <li><a className="SA-header__nav-item" id='showLeftPushe' to='#'>Leagues</a></li>
                     <li><a className="SA-header__nav-item">Videos</a></li>
-                    <li><a className="SA-header__nav-item">Gallery</a></li>
+                    <li><Link className="SA-header__nav-item" to='/gallery'>Gallery</Link></li>
                     <li><a className="SA-header__nav-item">About</a></li>
                   </Nav>
                 </div>
@@ -136,26 +136,31 @@ export default class Header extends React.Component {
         </div>
         <Modal isOpen={this.state.modal} modalTransition={{ timeout: 100 }} backdropTransition={{ timeout: 200 }}
           toggle={this.toggle} className={this.props.className} >
-          <Form className='SA-header__modal'>
-            <FormGroup row>
-              <Label for="titleInput" md={2}>Title</Label>
-              <Col md={10}>
-                <Input type="text" name="title" id="newTitle" placeholder="Title of the new" />
-              </Col>
-            </FormGroup>
-            <FormGroup row>
-              <Label for="newContent" md={2}>Content</Label>
-              <Col md={10}>
-                <Input type="textarea" name="text" id="newContent" />
-              </Col>
-            </FormGroup>
-            <FormGroup>
-              <Label for="newImage">File Browser</Label>
-              <Input type="file" name="file" id="newImage" />
-            </FormGroup>
-            <Button onClick={this.sendSubmit}>Submit</Button>
-            <Button onClick={this.openModal}>Close</Button>
-          </Form>
+          <ModalHeader>Add New</ModalHeader>   
+          <ModalBody>
+            <Form className='SA-header__modal'>
+              <FormGroup row>
+                <Label for="titleInput" md={2}>Title</Label>
+                <Col md={10}>
+                  <Input type="text" name="title" id="newTitle" placeholder="Title of the new" />
+                </Col>
+              </FormGroup>
+              <FormGroup row>
+                <Label for="newContent" md={2}>Content</Label>
+                <Col md={10}>
+                  <Input type="textarea" name="text" id="newContent" />
+                </Col>
+              </FormGroup>
+              <FormGroup>
+                <Label for="newImage">File Browser</Label>
+                <Input type="file" name="file" id="newImage" />
+              </FormGroup>
+              <ModalFooter>
+                <Button onClick={this.sendSubmit}>Submit</Button>
+                <Button onClick={this.openModal}>Close</Button>
+              </ModalFooter>
+            </Form>
+          </ModalBody>
         </Modal>
       </header>
     );

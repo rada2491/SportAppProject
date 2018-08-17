@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { map } from 'ramda'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
@@ -18,6 +19,7 @@ import './scss/main.scss';
 /* pages */
 import Home from './pages/home/'
 import Details from './pages/details/'
+import Gallery from './pages/gallery'
 
 /* Loading Image */
 import LoadingImage from './LoadingImage.png';
@@ -38,19 +40,20 @@ class App extends Component {
 
   static defaultProps = {
     items: [],
-    isLoaded: false,
+    isLoaded: true, //must be in false by default
     getAllLeagues: () => { }
   }
 
   async componentDidMount() {
-    this.props.getAllLeagues()
+    //this.props.getAllLeagues()
   }
 
   newLinkAside = aside => <Aside key={aside.id} items={aside} />
 
   render() {
-    const { isLoaded, items } = this.props;
+    //const { isLoaded, items } = this.props;
     console.log(this.props.isLoaded)
+    //{map(this.newLinkAside, items)}
     if (this.props.isLoaded) {
       return (
         <BrowserRouter>
@@ -64,7 +67,7 @@ class App extends Component {
                     </div>
                     <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
                       <h3>International Leagues</h3>
-                      {map(this.newLinkAside, items)}
+
                     </nav>
                   </div>
                 </div>
@@ -72,6 +75,7 @@ class App extends Component {
                   <main>
                     <Route exact path='/' component={Home} />
                     <Route path='/details/:id' component={Details} />
+                    <Route path='/gallery' component={Gallery} />
                   </main>
                 </div>
               </div>
@@ -92,12 +96,12 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({
-  items: state.aside.leagues,
-  isLoaded: state.aside.isLoaded
+  //items: state.aside.leagues,
+  //isLoaded: state.aside.isLoaded
 })
 
 const mapDispatchToProps = {
-  getAllLeagues
+  //getAllLeagues
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)

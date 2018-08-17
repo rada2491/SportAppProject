@@ -36,5 +36,193 @@
       "cardImage": "../src/components/main/Cards/barcaBoca.jpg",
       "id": 5
     }
+  ],
+  "Gallery": [
+    {
+      "name": "Premier League",
+      "id": 0,
+      "logo": "../src/components/main/Gallery/premier.png",
+      "Photos": [
+        {
+          "id": 0,
+          "src": "../src/components/main/Cards/barcaBoca.jpg",
+          "width": 4,
+          "height": 3
+        },
+        {
+          "id": 1,
+          "src": "../src/components/main/Cards/atlMadrid.jpg",
+          "width": 2,
+          "height": 1
+        },
+        {
+          "id": 2,
+          "src": "../src/components/main/Cards/cr7.jpg",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "id": 3,
+          "src": "../src/components/main/Cards/manU.png",
+          "width": 3,
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "Serie A",
+      "id": 1,
+      "logo": "../src/components/main/Gallery/serieA.png",
+      "photos": [
+        {
+          "id": 0,
+          "src": "../src/components/main/Cards/barcaBoca.jpg",
+          "width": 4,
+          "height": 3
+        },
+        {
+          "id": 1,
+          "src": "../src/components/main/Cards/atlMadrid.jpg",
+          "width": 2,
+          "height": 1
+        },
+        {
+          "id": 2,
+          "src": "../src/components/main/Cards/cr7.jpg",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "id": 3,
+          "src": "../src/components/main/Cards/manU.png",
+          "width": 3,
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "League BBVA",
+      "id": 2,
+      "logo": "../src/components/main/Gallery/bbva.jpg",
+      "photos": [
+        {
+          "id": 0,
+          "src": "../src/components/main/Cards/barcaBoca.jpg",
+          "width": 4,
+          "height": 3
+        },
+        {
+          "id": 1,
+          "src": "../src/components/main/Cards/atlMadrid.jpg",
+          "width": 2,
+          "height": 1
+        },
+        {
+          "id": 2,
+          "src": "../src/components/main/Cards/cr7.jpg",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "id": 3,
+          "src": "../src/components/main/Cards/manU.png",
+          "width": 3,
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "Eredivisie",
+      "id": 3,
+      "logo": "../src/components/main/Gallery/eredivisie.jpg",
+      "photos": [
+        {
+          "id": 0,
+          "src": "../src/components/main/Cards/barcaBoca.jpg",
+          "width": 4,
+          "height": 3
+        },
+        {
+          "id": 1,
+          "src": "../src/components/main/Cards/atlMadrid.jpg",
+          "width": 2,
+          "height": 1
+        },
+        {
+          "id": 2,
+          "src": "../src/components/main/Cards/cr7.jpg",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "id": 3,
+          "src": "../src/components/main/Cards/manU.png",
+          "width": 3,
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "id": 4,
+      "logo": "../src/components/main/Gallery/bundesliga.png",
+      "photos": [
+        {
+          "id": 0,
+          "src": "../src/components/main/Cards/barcaBoca.jpg",
+          "width": 4,
+          "height": 3
+        },
+        {
+          "id": 1,
+          "src": "../src/components/main/Cards/atlMadrid.jpg",
+          "width": 2,
+          "height": 1
+        },
+        {
+          "id": 2,
+          "src": "../src/components/main/Cards/cr7.jpg",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "id": 3,
+          "src": "../src/components/main/Cards/manU.png",
+          "width": 3,
+          "height": 2
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "id": 5,
+      "logo": "../src/components/main/Gallery/bundesliga.png",
+      "photos": [
+        {
+          "id": 0,
+          "src": "../src/components/main/Cards/barcaBoca.jpg",
+          "width": 4,
+          "height": 3
+        },
+        {
+          "id": 1,
+          "src": "../src/components/main/Cards/atlMadrid.jpg",
+          "width": 2,
+          "height": 1
+        },
+        {
+          "id": 2,
+          "src": "../src/components/main/Cards/cr7.jpg",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "id": 3,
+          "src": "../src/components/main/Cards/manU.png",
+          "width": 3,
+          "height": 2
+        }
+      ]
+    }
   ]
 }
