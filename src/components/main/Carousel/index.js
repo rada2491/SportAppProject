@@ -12,23 +12,28 @@ import premi from './pre-lea.png';
 const items = [
   {
     src: bbva,
-    altText: 'Slide 1'
+    altText: 'Slide 1',
+    caption: ''
   },
   {
     src: serieA,
     altText: 'Slide 2',
+    caption: ''
   },
   {
     src: bundes,
-    altText: 'Slide 3'
+    altText: 'Slide 3',
+    caption: ''
   },
   {
     src: champ,
-    altText: 'Slide 4'
+    altText: 'Slide 4',
+    caption: ''
   },
   {
     src: premi,
-    altText: 'Slide 5'
+    altText: 'Slide 5',
+    caption: ''
   }
 ];
 

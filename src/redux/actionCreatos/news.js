@@ -7,19 +7,18 @@ export default function getAllNews() {
     dispatch({
       type: a.NEWS_GETALL_REQUEST
     })
-
     try {
-
       const response = await fetch(API)
       const result = await response.json()
-
       dispatch({
         type: a.NEWS_GETALL_SUCCESS,
         payload: result
       })
-
     } catch (error) {
-
+      distpatch({
+        type: a.NEWS_GETALL_FAILURE,
+        error: error
+      })
     }
   }
 }

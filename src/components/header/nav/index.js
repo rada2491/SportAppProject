@@ -23,6 +23,7 @@ export default class Header extends React.Component {
 
 
   componentDidMount() {
+
     var menuLeft = document.getElementById('cbp-spmenu-s1'),
       showLeftPush = document.getElementById('showLeftPushe');
     var home = document.getElementById('contHome');
@@ -41,31 +42,81 @@ export default class Header extends React.Component {
         home.classList.remove('cbp-spmenu-push-toright')
       }
     };
+
+    if (window.location.href === "http://localhost:8080/albums") {
+      var menuLeft = document.getElementById('cbp-spmenu-s1'),
+        showLeftPush = document.getElementById('showLeftPushe');
+      var home = document.getElementById('contAlbum');
+
+      showLeftPush.onclick = function () {
+
+        if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
+          menuLeft.classList.add('cbp-spmenu-open')
+        } else {
+          menuLeft.classList.remove('cbp-spmenu-open')
+        }
+
+        if (!(home.classList.contains('cbp-spmenu-push-toright'))) {
+          home.classList.add('cbp-spmenu-push-toright')
+        } else {
+          home.classList.remove('cbp-spmenu-push-toright')
+        }
+      };
+    }
   }
 
   componentDidUpdate() {
-    var menuLeft = document.getElementById('cbp-spmenu-s1'),
-      showLeftPush = document.getElementById('showLeftPushe');
-    var main = document.getElementById('contHome');
+    if (window.location.href === "http://localhost:8080/") {
+      var menuLeft = document.getElementById('cbp-spmenu-s1'),
+        showLeftPush = document.getElementById('showLeftPushe');
+      var main = document.getElementById('contHome');
+      console.log(window.location.href)
 
-    if (menuLeft.classList.contains('cbp-spmenu-open')) {
-      menuLeft.classList.remove('cbp-spmenu-open')
-    }
-
-    showLeftPush.onclick = function () {
-
-      if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
-        menuLeft.classList.add('cbp-spmenu-open')
-      } else {
+      if (menuLeft.classList.contains('cbp-spmenu-open')) {
         menuLeft.classList.remove('cbp-spmenu-open')
       }
 
-      if (!(main.classList.contains('cbp-spmenu-push-toright'))) {
-        main.classList.add('cbp-spmenu-push-toright')
-      } else {
-        main.classList.remove('cbp-spmenu-push-toright')
+      showLeftPush.onclick = function () {
+
+        if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
+          menuLeft.classList.add('cbp-spmenu-open')
+        } else {
+          menuLeft.classList.remove('cbp-spmenu-open')
+        }
+
+        if (!(main.classList.contains('cbp-spmenu-push-toright'))) {
+          main.classList.add('cbp-spmenu-push-toright')
+        } else {
+          main.classList.remove('cbp-spmenu-push-toright')
+        }
+      };
+    }
+    else if (window.location.href === "http://localhost:8080/albums") {
+      var menuLeft = document.getElementById('cbp-spmenu-s1'),
+        showLeftPush = document.getElementById('showLeftPushe');
+      var main = document.getElementById('contAlbum');
+      console.log(window.location.href)
+
+      if (menuLeft.classList.contains('cbp-spmenu-open')) {
+        menuLeft.classList.remove('cbp-spmenu-open')
       }
-    };
+
+      showLeftPush.onclick = function () {
+
+        if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
+          menuLeft.classList.add('cbp-spmenu-open')
+        } else {
+          menuLeft.classList.remove('cbp-spmenu-open')
+        }
+
+        if (!(main.classList.contains('cbp-spmenu-push-toright'))) {
+          main.classList.add('cbp-spmenu-push-toright')
+        } else {
+          main.classList.remove('cbp-spmenu-push-toright')
+        }
+      };
+    }
+
   }
 
   openModal() {
@@ -136,7 +187,7 @@ export default class Header extends React.Component {
         </div>
         <Modal isOpen={this.state.modal} modalTransition={{ timeout: 100 }} backdropTransition={{ timeout: 200 }}
           toggle={this.toggle} className={this.props.className} >
-          <ModalHeader>Add New</ModalHeader>   
+          <ModalHeader>Add New</ModalHeader>
           <ModalBody>
             <Form className='SA-header__modal'>
               <FormGroup row>

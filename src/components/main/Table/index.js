@@ -28,7 +28,7 @@ const columns = [{
 
 export default ({ state }) => {
   return (
-    <BootstrapTable keyField='id' data={state} columns={columns} />
+    <BootstrapTable keyField='position' data={state} columns={columns} />
   )
 }
 

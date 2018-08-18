@@ -31,7 +31,10 @@ export default function getAllLeagues() {
       })
 
     } catch (error) {
-
+      distpatch({
+        type: a.ASIDE_GETALL_FAILURE,
+        error: error
+      })
     }
   }
 }

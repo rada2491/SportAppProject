@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import LeagueTable from '../../components/main/Table/'
+import { connect } from 'react-redux'
 
-var API = 'http://api.football-data.org/v1/soccerseasons/'
-var APIEND = '/leagueTable'
+import getDetailInfo from '../../redux/actionCreatos/table'
+import getUpdatedInfo from '../../redux/actionCreatos/table'
 
-var API2 = 'http://localhost:3000/soccerseasons/'
-
-var myHeaders = new Headers({
-  'Content-Type': 'application/json',
-  'X-Auth-Token': '176d0f15e52c4479976af3e3a372afcb'
-});
 class Details extends Component {
 
   constructor(props) {
@@ -21,54 +16,35 @@ class Details extends Component {
     }
   }
 
-  componentDidMount() {
-    //const { url } = this.props.location.state
+  async componentDidMount() {
     const url = this.props.url
-    const ref = API + url + APIEND
-    //const ref = API2 + url
-    fetch(ref, {
-      method: 'GET',
-      headers: myHeaders
-    })
-    //fetch(ref)
-      .then(res => res.json())
-      .then(date => {
-        this.setState({
-          isLoaded: true,
-          items: date.standing,
-          site: ref
-        })
-      });
+    this.props.getDetailInfo(url)
   }
 
-  componentWillReceiveProps(newProps) {
+  async componentWillReceiveProps(newProps) {
     var id = newProps.url
-    if (id !== this.props) {
-      const ref = API + id + APIEND
-      //const ref = API2 + id
-      fetch(ref, {
-        method: 'GET',
-        headers: myHeaders
-      })
-      //fetch(ref)
-        .then(res => res.json())
-        .then(date => {
-          this.setState({
-            isLoaded: true,
-            items: date.standing,
-          })
-        });
+    if (id !== this.props.url) {
+      this.props.getUpdatedInfo(id)
     }
   }
 
   render() {
-    const { site, items } = this.state;
+    const { items } = this.props;
     return (
       <div className='cbp-spmenu-push' id='contDetail'>
-        <LeagueTable state={this.state.items} />
+        <LeagueTable state={items} />
       </div>
     );
   }
 }
 
-export default Details;
+const mapStateToProps = state => ({
+  items: state.table.info
+})
+
+const mapDispatchToProps = {
+  getDetailInfo,
+  getUpdatedInfo
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Details);

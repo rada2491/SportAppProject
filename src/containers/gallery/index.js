@@ -21,7 +21,7 @@ class Gallery extends Component {
     const { photos } = this.state
     console.log(photos)
     return (
-      <div>
+      <div className='cbp-spmenu-push' id='contGallery'>
         <LeagueGallery album={this.state.photos}/>
       </div>
     );
