@@ -4,6 +4,7 @@ import {
   Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
+import './style.scss';
 
 const API = 'http://localhost:3000/album/'
 
@@ -29,7 +30,7 @@ export default class Album extends React.Component {
     console.log(this.state)
     //<albumry photos={albumry} />
     return (
-      <CardDeck className='SA-CardDeck d-flex justify-content-around'>
+      <CardDeck className='SA-CardDeck d-flex justify-content-around SA-Album-CardDeck'>
         {
           this.state.album.map(album => {
             return (
@@ -37,7 +38,7 @@ export default class Album extends React.Component {
                 <Card key={album.id} id={album.id} className='SA-CardDeck__card'>
                   <CardImg top src={album.logo} alt="Card image cap" />
                   <CardBody>
-                    <CardTitle>{album.name}</CardTitle>
+                    <CardTitle className='SA-Album-CardDeck__card-title'>{album.photos.length} Photos</CardTitle>
                   </CardBody>
                 </Card>
               </Link>

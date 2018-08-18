@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import LeagueTable from '../../components/main/Table/'
 
-var add = 'http://api.football-data.org/v1/soccerseasons/'
-var gg = '/leagueTable'
+var API = 'http://api.football-data.org/v1/soccerseasons/'
+var APIEND = '/leagueTable'
+
+var API2 = 'http://localhost:3000/soccerseasons/'
 
 var myHeaders = new Headers({
   'Content-Type': 'application/json',
@@ -20,12 +22,15 @@ class Details extends Component {
   }
 
   componentDidMount() {
-    const { url } = this.props.location.state
-    const ref = add + url + gg
+    //const { url } = this.props.location.state
+    const url = this.props.url
+    const ref = API + url + APIEND
+    //const ref = API2 + url
     fetch(ref, {
       method: 'GET',
       headers: myHeaders
     })
+    //fetch(ref)
       .then(res => res.json())
       .then(date => {
         this.setState({
@@ -37,13 +42,15 @@ class Details extends Component {
   }
 
   componentWillReceiveProps(newProps) {
-    var id = newProps.location.state.url
-    if (id !== this.props.location.state.url) {
-      const ref = add + id + gg
+    var id = newProps.url
+    if (id !== this.props) {
+      const ref = API + id + APIEND
+      //const ref = API2 + id
       fetch(ref, {
         method: 'GET',
         headers: myHeaders
       })
+      //fetch(ref)
         .then(res => res.json())
         .then(date => {
           this.setState({

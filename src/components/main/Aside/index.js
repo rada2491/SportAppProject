@@ -17,11 +17,7 @@ import './style.scss';
 const Aside = ({items}) => {
   //const { items } = this.props
   return (
-
-
     <Link key={items.id} to={{ pathname: `/details/${items.id}`, state: { url: items.id } }}>{items.caption}</Link>
-
-
   );
 }
 

@@ -29,30 +29,22 @@ import LoadingImage from './LoadingImage.png';
 
 import getAllLeagues from './redux/actionCreatos/aside';
 
-
-const API = 'http://api.football-data.org/v1/soccerseasons';
-
-var myHeaders = new Headers({
-  'Content-Type': 'application/json',
-  'X-Auth-Token': '176d0f15e52c4479976af3e3a372afcb'
-});
-
 class App extends Component {
 
   static defaultProps = {
     items: [],
-    isLoaded: true, //must be in false by default
+    isLoaded: false, //must be false by default
     getAllLeagues: () => { }
   }
 
   async componentDidMount() {
-    //this.props.getAllLeagues()
+    this.props.getAllLeagues()
   }
 
   newLinkAside = aside => <Aside key={aside.id} items={aside} />
 
   render() {
-    //const { isLoaded, items } = this.props;
+    const { isLoaded, items } = this.props;
     console.log(this.props.isLoaded)
     //{map(this.newLinkAside, items)}
     if (this.props.isLoaded) {
@@ -68,7 +60,7 @@ class App extends Component {
                     </div>
                     <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
                       <h3>International Leagues</h3>
-
+                      {map(this.newLinkAside, items)}
                     </nav>
                   </div>
                 </div>
@@ -98,12 +90,12 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({
-  //items: state.aside.leagues,
-  //isLoaded: state.aside.isLoaded
+  items: state.aside.leagues,
+  isLoaded: state.aside.isLoaded
 })
 
 const mapDispatchToProps = {
-  //getAllLeagues
+  getAllLeagues
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
