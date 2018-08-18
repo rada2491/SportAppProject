@@ -41,6 +41,18 @@
       "title": "Test",
       "content": "This is a test",
       "cardImage": "../src/components/main/Cards/cr7.jpg"
+    },
+    {
+      "id": 7,
+      "title": "qweqwe",
+      "content": "qweqweqwe",
+      "cardImage": "../src/components/main/Cards/premier.png"
+    },
+    {
+      "id": 8,
+      "title": "qweqwe",
+      "content": "qweqwe",
+      "cardImage": "../src/components/main/Cards/manU.png"
     }
   ],
   "album": [

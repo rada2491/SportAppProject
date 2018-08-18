@@ -13,7 +13,6 @@ import './scss/animate.css'
 
 import Header from './components/header/nav/'
 import Aside from './components/main/Aside/'
-import Loading from './pro'
 import Footer from './components/footer/'
 
 import './scss/main.scss';
