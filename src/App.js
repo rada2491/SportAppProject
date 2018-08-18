@@ -6,6 +6,8 @@ import { map } from 'ramda'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import { Animated } from "react-animated-css";
+import './scss/animate.css'
 
 /* Font Awesome*/
 
@@ -45,37 +47,38 @@ class App extends Component {
 
   render() {
     const { isLoaded, items } = this.props;
-    console.log(this.props.isLoaded)
     //{map(this.newLinkAside, items)}
     if (this.props.isLoaded) {
       return (
         <BrowserRouter>
-          <div className="App">
-            <Header />
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-md-2">
-                  <div>
-                    <div className='main'>
+          <Animated animationIn="bounceInRight" animationOut="zoomOutDown" isVisible={true}>
+            <div className="App bounceInRight">
+              <Header />
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-2">
+                    <div>
+                      <div className='main'>
+                      </div>
+                      <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
+                        <h3>International Leagues</h3>
+                        {map(this.newLinkAside, items)}
+                      </nav>
                     </div>
-                    <nav className='cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left' id='cbp-spmenu-s1'>
-                      <h3>International Leagues</h3>
-                      {map(this.newLinkAside, items)}
-                    </nav>
+                  </div>
+                  <div className="offset-md-1 col-md-10">
+                    <main>
+                      <Route exact path='/' component={Home} />
+                      <Route path='/details/:id' component={Details} />
+                      <Route path='/albums' component={Album} />
+                      <Route path='/gallery/:id' component={Gallery} />
+                    </main>
                   </div>
                 </div>
-                <div className="offset-md-1 col-md-10">
-                  <main>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/details/:id' component={Details} />
-                    <Route path='/albums' component={Album} />
-                    <Route path='/gallery/:id' component={Gallery} />
-                  </main>
-                </div>
               </div>
+              <Footer />
             </div>
-            <Footer />
-          </div>
+          </Animated>
         </BrowserRouter>
       )
     } else {

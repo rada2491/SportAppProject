@@ -19,15 +19,11 @@ export default class Album extends React.Component {
   async componentDidMount() {
     const response = await fetch(API)
     const result = await response.json()
-    //console.log(result)
     this.setState({
       album: result
     })
   }
   render() {
-
-
-    console.log(this.state)
     //<albumry photos={albumry} />
     return (
       <CardDeck className='SA-CardDeck d-flex justify-content-around SA-Album-CardDeck'>

@@ -19,7 +19,6 @@ class Gallery extends Component {
   
   render() {
     const { photos } = this.state
-    console.log(photos)
     return (
       <div className='cbp-spmenu-push' id='contGallery'>
         <LeagueGallery album={this.state.photos}/>

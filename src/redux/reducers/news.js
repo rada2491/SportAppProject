@@ -18,6 +18,12 @@ export default function newsReducer(state = INITIAL_STATE, action) {
         isLoaded: true,
         news: action.payload
       }
+    case a.NEWS_GETALL_UPDATE:
+      return {
+        ...state,
+        isLoaded: true,
+        news: action.payload
+      }
     default:
       return state
   }

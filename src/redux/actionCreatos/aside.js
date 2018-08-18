@@ -23,7 +23,6 @@ export default function getAllLeagues() {
       //const response = await fetch(BACKUPAPI)
       const result = await response.json()
       var it = result.slice(0, 13);
-      console.log(it)
 
       dispatch({
         type: a.ASIDE_GETALL_SUCCESS,

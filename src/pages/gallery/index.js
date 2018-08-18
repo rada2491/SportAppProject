@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Animated } from "react-animated-css";
 import LeagueGallery from '../../components/main/Gallery/'
 
 class GalleryPage extends Component {
@@ -10,7 +11,7 @@ class GalleryPage extends Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const { photoAlbum } = this.props.location.state;
     this.setState({
       photos: photoAlbum
@@ -19,10 +20,11 @@ class GalleryPage extends Component {
   //<LeagueGallery album={this.state.photos}/>
   render() {
     const { photos } = this.state
-    console.log(photos)
     return (
       <div>
-        <LeagueGallery album={this.state.photos}/>
+        <Animated animationIn="rotateIn" animationOut="slideOutUp" isVisible={true}>
+          <LeagueGallery album={this.state.photos} />
+        </Animated>
       </div>
     );
   }

@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 import { Form, FormGroup, Label, Modal, Col, Input, Button, Nav, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './style.scss';
 
 import logo from './logo.png';
 
-var id, newTitle, newContent, newImage;
+import updateNews from '../../../redux/actionCreatos/updateNews'
+
+var id, newTitle, newContent, newImage, newId;
 
 const API = 'http://localhost:3000/news/'
 
-export default class Header extends React.Component {
+class Header extends React.Component {
 
   constructor(props) {
     super(props);
@@ -70,7 +73,6 @@ export default class Header extends React.Component {
       var menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
       var main = document.getElementById('contHome');
-      console.log(window.location.href)
 
       if (menuLeft.classList.contains('cbp-spmenu-open')) {
         menuLeft.classList.remove('cbp-spmenu-open')
@@ -95,7 +97,6 @@ export default class Header extends React.Component {
       var menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
       var main = document.getElementById('contAlbum');
-      console.log(window.location.href)
 
       if (menuLeft.classList.contains('cbp-spmenu-open')) {
         menuLeft.classList.remove('cbp-spmenu-open')
@@ -126,39 +127,22 @@ export default class Header extends React.Component {
   }
 
   sendSubmit() {
-    fetch(API)
-      .then(res2 => res2.json())
-      .then(resultado => {
-        id = resultado.length
-      })
+    newId = this.props.items.length
     newTitle = document.getElementById('newTitle').value;
     newContent = document.getElementById('newContent').value;
     newImage = `../src/components/main/Cards/${document.getElementById('newImage').files[0].name}`;
 
     var addNew = {
-      "id": id, "title": newTitle, "content": newContent
+      "id": newId, "title": newTitle, "content": newContent
       , "cardImage": newImage
     }
-
-    fetch(API, {
-      method: 'POST',
-      body: JSON.stringify(addNew),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then(res => res.json())
-      .catch(error => console.log('Error:', error))
-      .then(response => console.log('Success:', response))
-
+    
+    this.props.updateNews(addNew)
     this.setState({
       modal: !this.state.modal
     })
 
-    this.forceUpdate();
-
-    console.log(newTitle)
-    console.log(newContent)
-    console.log(newImage)
+    //this.forceUpdate();
   }
 
   render() {
@@ -217,3 +201,13 @@ export default class Header extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  items: state.news.news
+})
+
+const mapDispatchToProps = {
+  updateNews
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

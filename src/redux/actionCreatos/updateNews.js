@@ -2,28 +2,7 @@ import * as a from '../actions/types'
 
 const API = 'http://localhost:3000/news/'
 
-export default function getAllNews() {
-  return async dispatch => {
-    dispatch({
-      type: a.NEWS_GETALL_REQUEST
-    })
-    try {
-      const response = await fetch(API)
-      const result = await response.json()
-      dispatch({
-        type: a.NEWS_GETALL_SUCCESS,
-        payload: result
-      })
-    } catch (error) {
-      distpatch({
-        type: a.NEWS_GETALL_FAILURE,
-        error: error
-      })
-    }
-  }
-}
-
-export function updateNews(newObj) {
+export default function updateNews(newObj) {
   
   return async dispatch => {
     dispatch({
@@ -31,7 +10,7 @@ export function updateNews(newObj) {
     })
 
     try {
-      fetch(API, {
+      await fetch(API, {
         method: 'POST',
         body: JSON.stringify(newObj),
         headers: {
@@ -44,16 +23,11 @@ export function updateNews(newObj) {
       const response = await fetch(API)
       const result = await response.json()
       dispatch({
-        type: a.NEWS_GETALL_SUCCESS,
+        type: a.NEWS_GETALL_UPDATE,
         payload: result
       })
-
     } catch (error) {
-      distpatch({
-        type: a.ASIDE_GETALL_FAILURE,
-        error: error
-      })
+
     }
   }
-
 }

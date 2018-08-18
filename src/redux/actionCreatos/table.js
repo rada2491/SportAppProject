@@ -14,7 +14,6 @@ export default function getDetailInfo(id) {
   const url = API + id + APIEND
   //local db
   //const url = API2 + id
-  console.log(url)
   return async distpatch => {
     distpatch({
       type: a.Table_GETALL_REQUEST
@@ -26,7 +25,6 @@ export default function getDetailInfo(id) {
         headers: myHeaders
       })
       const result = await response.json()
-      console.log(result)
       distpatch({
         type: a.Table_GETALL_SUCCESS,
         payload: result.standing
