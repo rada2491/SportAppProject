@@ -32,7 +32,6 @@ export default class Album extends React.Component {
       <CardDeck className='SA-CardDeck d-flex justify-content-around'>
         {
           this.state.album.map(album => {
-
             return (
               <Link key={album.id} to={{ pathname: `/gallery/${album.id}`, state: { photoAlbum: album.photos } }}>
                 <Card key={album.id} id={album.id} className='SA-CardDeck__card'>
@@ -43,7 +42,6 @@ export default class Album extends React.Component {
                 </Card>
               </Link>
             )
-
           })
         }
       </CardDeck>

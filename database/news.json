@@ -45,27 +45,73 @@
       "photos": [
         {
           "id": 0,
-          "src": "../src/components/main/Cards/barcaBoca.jpg",
-          "width": 4,
-          "height": 3
+          "src": "../src/Gallery/Premier/1.jpg",
+          "thumbnail": "../src/Gallery/Premier/1.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 1,
-          "src": "../src/components/main/Cards/atlMadrid.jpg",
-          "width": 2,
-          "height": 1
+          "src": "../src/Gallery/Premier/2.jpg",
+          "thumbnail": "../src/Gallery/Premier/2.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 2,
-          "src": "../src/components/main/Cards/cr7.jpg",
-          "width": 1,
-          "height": 1
+          "src": "../src/Gallery/Premier/3.jpg",
+          "thumbnail": "../src/Gallery/Premier/3.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 3,
-          "src": "../src/components/main/Cards/manU.png",
-          "width": 3,
-          "height": 2
+          "src": "../src/Gallery/Premier/4.jpg",
+          "thumbnail": "../src/Gallery/Premier/4.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 4,
+          "src": "../src/Gallery/Premier/5.jpg",
+          "thumbnail": "../src/Gallery/Premier/5.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 5,
+          "src": "../src/Gallery/Premier/6.jpg",
+          "thumbnail": "../src/Gallery/Premier/6.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 6,
+          "src": "../src/Gallery/Premier/7.jpg",
+          "thumbnail": "../src/Gallery/Premier/7.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 7,
+          "src": "../src/Gallery/Premier/8.jpg",
+          "thumbnail": "../src/Gallery/Premier/8.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 8,
+          "src": "../src/Gallery/Premier/9.png",
+          "thumbnail": "../src/Gallery/Premier/9.png",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 9,
+          "src": "../src/Gallery/Premier/10.jpg",
+          "thumbnail": "../src/Gallery/Premier/10.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         }
       ]
     },
@@ -76,27 +122,73 @@
       "photos": [
         {
           "id": 0,
-          "src": "../src/components/main/Cards/barcaBoca.jpg",
-          "width": 4,
-          "height": 3
+          "src": "../src/Gallery/SerieA/1.jpg",
+          "thumbnail": "../src/Gallery/SerieA/1.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 1,
-          "src": "../src/components/main/Cards/atlMadrid.jpg",
-          "width": 2,
-          "height": 1
+          "src": "../src/Gallery/SerieA/2.jpg",
+          "thumbnail": "../src/Gallery/SerieA/2.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 2,
-          "src": "../src/components/main/Cards/cr7.jpg",
-          "width": 1,
-          "height": 1
+          "src": "../src/Gallery/SerieA/3.jpg",
+          "thumbnail": "../src/Gallery/SerieA/3.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 3,
-          "src": "../src/components/main/Cards/manU.png",
-          "width": 3,
-          "height": 2
+          "src": "../src/Gallery/SerieA/4.jpg",
+          "thumbnail": "../src/Gallery/SerieA/4.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 4,
+          "src": "../src/Gallery/SerieA/5.jpg",
+          "thumbnail": "../src/Gallery/SerieA/5.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 5,
+          "src": "../src/Gallery/SerieA/6.jpg",
+          "thumbnail": "../src/Gallery/SerieA/6.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 6,
+          "src": "../src/Gallery/SerieA/7.jpg",
+          "thumbnail": "../src/Gallery/SerieA/7.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 7,
+          "src": "../src/Gallery/SerieA/8.jpg",
+          "thumbnail": "../src/Gallery/SerieA/8.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 8,
+          "src": "../src/Gallery/SerieA/9.jpg",
+          "thumbnail": "../src/Gallery/SerieA/9.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 9,
+          "src": "../src/Gallery/SerieA/10.jpg",
+          "thumbnail": "../src/Gallery/SerieA/10.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         }
       ]
     },
@@ -107,27 +199,73 @@
       "photos": [
         {
           "id": 0,
-          "src": "../src/components/main/Cards/barcaBoca.jpg",
-          "width": 4,
-          "height": 3
+          "src": "../src/Gallery/Bbva/1.jpg",
+          "thumbnail": "../src/Gallery/Bbva/1.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 1,
-          "src": "../src/components/main/Cards/atlMadrid.jpg",
-          "width": 2,
-          "height": 1
+          "src": "../src/Gallery/Bbva/2.jpg",
+          "thumbnail": "../src/Gallery/Bbva/2.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 2,
-          "src": "../src/components/main/Cards/cr7.jpg",
-          "width": 1,
-          "height": 1
+          "src": "../src/Gallery/Bbva/3.jpg",
+          "thumbnail": "../src/Gallery/Bbva/3.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 3,
-          "src": "../src/components/main/Cards/manU.png",
-          "width": 3,
-          "height": 2
+          "src": "../src/Gallery/Bbva/4.jpg",
+          "thumbnail": "../src/Gallery/Bbva/4.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 4,
+          "src": "../src/Gallery/Bbva/5.jpg",
+          "thumbnail": "../src/Gallery/Bbva/5.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 5,
+          "src": "../src/Gallery/Bbva/6.jpg",
+          "thumbnail": "../src/Gallery/Bbva/6.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 6,
+          "src": "../src/Gallery/Bbva/7.jpg",
+          "thumbnail": "../src/Gallery/Bbva/7.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 7,
+          "src": "../src/Gallery/Bbva/8.jpg",
+          "thumbnail": "../src/Gallery/Bbva/8.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 8,
+          "src": "../src/Gallery/Bbva/9.jpg",
+          "thumbnail": "../src/Gallery/Bbva/9.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 9,
+          "src": "../src/Gallery/Bbva/10.jpg",
+          "thumbnail": "../src/Gallery/Bbva/10.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         }
       ]
     },
@@ -138,27 +276,73 @@
       "photos": [
         {
           "id": 0,
-          "src": "../src/components/main/Cards/barcaBoca.jpg",
-          "width": 4,
-          "height": 3
+          "src": "../src/Gallery/Eredivisie/1.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/1.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 1,
-          "src": "../src/components/main/Cards/atlMadrid.jpg",
-          "width": 2,
-          "height": 1
+          "src": "../src/Gallery/Eredivisie/2.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/2.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 2,
-          "src": "../src/components/main/Cards/cr7.jpg",
-          "width": 1,
-          "height": 1
+          "src": "../src/Gallery/Eredivisie/3.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/3.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 3,
-          "src": "../src/components/main/Cards/manU.png",
-          "width": 3,
-          "height": 2
+          "src": "../src/Gallery/Eredivisie/4.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/4.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 4,
+          "src": "../src/Gallery/Eredivisie/5.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/5.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 5,
+          "src": "../src/Gallery/Eredivisie/6.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/6.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 6,
+          "src": "../src/Gallery/Eredivisie/7.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/7.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 7,
+          "src": "../src/Gallery/Eredivisie/8.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/8.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 8,
+          "src": "../src/Gallery/Eredivisie/9.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/9.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 9,
+          "src": "../src/Gallery/Eredivisie/10.jpg",
+          "thumbnail": "../src/Gallery/Eredivisie/10.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         }
       ]
     },
@@ -169,58 +353,73 @@
       "photos": [
         {
           "id": 0,
-          "src": "../src/components/main/Cards/barcaBoca.jpg",
-          "width": 4,
-          "height": 3
+          "src": "../src/Gallery/Bundesliga/1.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/1.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 1,
-          "src": "../src/components/main/Cards/atlMadrid.jpg",
-          "width": 2,
-          "height": 1
+          "src": "../src/Gallery/Bundesliga/2.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/2.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 2,
-          "src": "../src/components/main/Cards/cr7.jpg",
-          "width": 1,
-          "height": 1
+          "src": "../src/Gallery/Bundesliga/3.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/3.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
           "id": 3,
-          "src": "../src/components/main/Cards/manU.png",
-          "width": 3,
-          "height": 2
-        }
-      ]
-    },
-    {
-      "name": "Bundesliga",
-      "id": 5,
-      "logo": "../src/components/main/Album/bundesliga.png",
-      "photos": [
-        {
-          "id": 0,
-          "src": "../src/components/main/Cards/barcaBoca.jpg",
-          "width": 4,
-          "height": 3
+          "src": "../src/Gallery/Bundesliga/4.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/4.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
-          "id": 1,
-          "src": "../src/components/main/Cards/atlMadrid.jpg",
-          "width": 2,
-          "height": 1
+          "id": 4,
+          "src": "../src/Gallery/Bundesliga/5.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/5.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
-          "id": 2,
-          "src": "../src/components/main/Cards/cr7.jpg",
-          "width": 1,
-          "height": 1
+          "id": 5,
+          "src": "../src/Gallery/Bundesliga/6.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/6.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         },
         {
-          "id": 3,
-          "src": "../src/components/main/Cards/manU.png",
-          "width": 3,
-          "height": 2
+          "id": 6,
+          "src": "../src/Gallery/Bundesliga/7.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/7.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 7,
+          "src": "../src/Gallery/Bundesliga/8.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/8.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 8,
+          "src": "../src/Gallery/Bundesliga/9.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/9.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
+        },
+        {
+          "id": 9,
+          "src": "../src/Gallery/Bundesliga/10.jpg",
+          "thumbnail": "../src/Gallery/Bundesliga/10.jpg",
+          "thumbnailWidth": 320,
+          "thumbnailHeight": 174
         }
       ]
     }
