@@ -35,6 +35,12 @@
       "content": "It would, of course, be silly to draw conclusions from a single, gentle preseason friendly, disputed by two teams a little short of full strength, and which inevitably turned into a parade of second-half substitutions. Even so, Barcelona's 3-0 win Wednesday over Boca Juniors provides more evidence toward a clear conclusion: how rich South American football is, and how poor the continent's club game has become.",
       "cardImage": "../src/components/main/Cards/barcaBoca.jpg",
       "id": 5
+    },
+    {
+      "id": 6,
+      "title": "Test",
+      "content": "This is a test",
+      "cardImage": "../src/components/main/Cards/cr7.jpg"
     }
   ],
   "album": [
