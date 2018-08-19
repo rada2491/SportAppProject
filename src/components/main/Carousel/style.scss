@@ -1,6 +1,6 @@
 
 .carousel-indicators li {
-     background: #333;
+     display: none;
 }
 
 .carousel-control-prev-icon:after{
@@ -15,6 +15,8 @@
     color: #333;
 }
 .carouselImg {
+    margin-top: 10px;
+    margin-bottom: 35px;
     img {
         margin: auto auto 60px;
         width: 60% !important;

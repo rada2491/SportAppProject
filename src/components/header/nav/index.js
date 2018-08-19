@@ -32,7 +32,6 @@ class Header extends React.Component {
     var home = document.getElementById('contHome');
 
     showLeftPush.onclick = function () {
-      console.log('yica2')
       if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
         menuLeft.classList.add('cbp-spmenu-open')
       } else {
@@ -50,7 +49,6 @@ class Header extends React.Component {
       var menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
       var home = document.getElementById('contAlbum');
-      console.log('yica')
       showLeftPush.onclick = function () {
 
         if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
@@ -70,7 +68,6 @@ class Header extends React.Component {
 
   componentDidUpdate() {
     if (window.location.href === "http://localhost:8080/") {
-      console.log('yica3')
       var menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
       var main = document.getElementById('contHome');
@@ -95,7 +92,6 @@ class Header extends React.Component {
       };
     }
     if (window.location.href === "http://localhost:8080/albums") {
-      console.log('yica4')
       var menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
       var main = document.getElementById('contAlbum');

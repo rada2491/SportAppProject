@@ -1,18 +1,27 @@
 import React from 'react';
 import {
-  Card, CardImg, CardTitle, CardBody
+  Card, CardImg, CardTitle, CardText, CardBody
 } from 'reactstrap';
+import './style.scss'
 
 const mainCard = ({ newItem }) => {
-  console.log(newItem)
   return (
     <div>
-      <CardImg top src={newItem.cardImage} alt="Card image cap" />
-      <Card key={newItem.id} id={newItem.id} className='SA-CardDeck__card'>
-        <CardBody>
-          <CardTitle>{newItem.title}</CardTitle>
-        </CardBody>
-      </Card>
+      {
+        newItem.map(item => {
+          return (
+            <div>
+              <CardImg top src={item.cardImage} alt="Card image cap"/>
+              <Card key={item.id} id={item.id} className=''>
+                <CardBody className='SA-Main-New__body'>
+                  <CardTitle><h2>{item.title}</h2></CardTitle>
+                  <CardText>{item.content}</CardText>
+                </CardBody>
+              </Card>
+            </div>
+          )
+        })
+      }
     </div>
   )
 }

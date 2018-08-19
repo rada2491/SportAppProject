@@ -35,18 +35,6 @@
       "content": "It would, of course, be silly to draw conclusions from a single, gentle preseason friendly, disputed by two teams a little short of full strength, and which inevitably turned into a parade of second-half substitutions. Even so, Barcelona's 3-0 win Wednesday over Boca Juniors provides more evidence toward a clear conclusion: how rich South American football is, and how poor the continent's club game has become.",
       "cardImage": "../src/components/main/Cards/barcaBoca.jpg",
       "id": "5"
-    },
-    {
-      "id": "6",
-      "title": "Title",
-      "content": "this is a test",
-      "cardImage": "../src/components/main/Cards/vidal.jpg"
-    },
-    {
-      "id": "7",
-      "title": "example",
-      "content": "this is a test",
-      "cardImage": "../src/components/main/Cards/cort.jpg"
     }
   ],
   "album": [
@@ -9506,6 +9494,78 @@
           }
         }
       ]
+    }
+  ],
+  "results": [
+    {
+      "id": "0",
+      "date": "2018-04-07T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 33,
+      "homeTeamName": "MCFC",
+      "awayTeamName": "MUFC",
+      "homeTeamLogo": "../src/Logos/MCFC.png",
+      "awayTeamLogo": "../src/Logos/MUFC.png",
+      "result": {
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 3
+      }
+    },
+    {
+      "id": "1",
+      "date": "2018-04-29T13:00:00Z",
+      "status": "FINISHED",
+      "matchday": 35,
+      "homeTeamName": "Int",
+      "awayTeamName": "JUVE",
+      "homeTeamLogo": "../src/Logos/Int.png",
+      "awayTeamLogo": "../src/Logos/JUVE.png",
+      "result": {
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 3
+      }
+    },
+    {
+      "id": "2",
+      "date": "2018-05-06T18:45:00Z",
+      "status": "FINISHED",
+      "matchday": 36,
+      "homeTeamName": "BARCA",
+      "awayTeamName": "MAD",
+      "homeTeamLogo": "../src/Logos/BARCA.png",
+      "awayTeamLogo": "../src/Logos/MAD.png",
+      "result": {
+        "goalsHomeTeam": 2,
+        "goalsAwayTeam": 2
+      }
+    },
+    {
+      "id": "3",
+      "date": "2018-03-31T16:30:00Z",
+      "status": "FINISHED",
+      "matchday": 28,
+      "homeTeamName": "FCB",
+      "awayTeamName": "BVB",
+      "homeTeamLogo": "../src/Logos/FCB.png",
+      "awayTeamLogo": "../src/Logos/BVB.png",
+      "result": {
+        "goalsHomeTeam": 6,
+        "goalsAwayTeam": 0
+      }
+    },
+    {
+      "id": "4",
+      "date": "2018-04-15T17:00:00Z",
+      "status": "FINISHED",
+      "matchday": 30,
+      "homeTeamName": "SLB",
+      "awayTeamName": "FCP",
+      "homeTeamLogo": "../src/Logos/SLB.png",
+      "awayTeamLogo": "../src/Logos/FCP.png",
+      "result": {
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 1
+      }
     }
   ]
 }
