@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import Carousel from '../../components/main/Carousel/';
 import Card from '../../components/main/Cards/';
-import { map } from 'ramda'
+import MainNew from '../../components/main/MainCard/';
+import { map } from 'ramda';
 import { CardDeck } from 'reactstrap';
 
 import getAllNews from '../../redux/actionCreatos/news'
@@ -26,11 +27,13 @@ class Home extends Component {
 
   render() {
     const { items } = this.props;
-    
+    console.log(items.slice(0,1))
+    //<MainNew newItem = { items.slice(0,1)} />
     return (
       <div className='container-fluid cbp-spmenu-push' id='contHome'>
         <div>
           <Carousel />
+          
           <CardDeck className='d-flex justify-content-around SA-CardDeck'>
             {map(this.newItemCreator, items)}
           </CardDeck>
