@@ -1,19 +1,19 @@
 {
   "news": [
     {
-      "id": 0,
+      "id": "0",
       "title": "Chelsea and Real Madrid agree fee for transfer of goalkeeper Thibaut Courtois",
       "content": "Thibaut Courtois is set for a move from Chelsea to Real Madrid pending a medical, after the clubs announced they had agreed to a deal on Wednesday. According to sources, Real Madrid will pay Chelsea £35 million (€38.8m, $45m) for the Belgium international. The deal will also see midfielder Mateo Kovacic join the Blues on a season-long loan. Chelsea have already moved to replace Courtois, activating the €80m (£71.5m) buyout clause in the contract of Athletic Bilbao goalkeeper Kepa Arrizabalaga, making him the world's most expensive goalkeeper.",
       "cardImage": "../src/components/main/Cards/cort.jpg"
     },
     {
-      "id": 1,
+      "id": "1",
       "title": "Barcelona's signing of Arturo Vidal fails to impress as concerns persist",
       "content": "Arturo Vidal arrived in Spain on Sunday to pose for photographs for the first time since agreeing to become a Barcelona player.  The Chilean had a big smile across his face as he stuck his thumbs up for the camera, but it's not a signing which has been universally celebrated. Vidal joins Barca from Bayern Munich for around €20 million. If you look it has CV, it looks like a good deal. Some, though, disagree.",
       "cardImage": "../src/components/main/Cards/vidal.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Jose Mourinho, Manchester United must move past difficult preseason",
       "content": "Manchester United's players left Bayern Munich's Allianz Arena late on Sunday with more urgency than they had shown on the pitch in the team's soporific 1-0 friendly defeat to the German champions.With a chartered aircraft needing to take off by midnight to avoid the team having to stay in Germany overnight, only Phil Jones stopped to talk to the few English journalists who travelled to Bavaria, while Jose Mourinho didn't do his normal post-match press conference.",
       "cardImage": "../src/components/main/Cards/manU.png"
@@ -22,37 +22,19 @@
       "title": "Juventus' Cristiano Ronaldo scores goal vs. U20s in first appearance",
       "content": "Cristiano Ronaldo scored a goal in his first Juventus appearance as the first team defeated the B team, their under-20 squad, 5-0 in the club's annual friendly at the Agnelli family estate in rural Villar Perosa. Ronaldo, who joined Juve from Real Madrid last month, began preseason training on July 30 and did not participate in any of the International Champions Cup games in the United States.",
       "cardImage": "../src/components/main/Cards/cr7.jpg",
-      "id": 3
+      "id": "3"
     },
     {
       "title": "Atletico finally get one over their local rivals",
       "content": "Atletico Madrid finally won a European \"derbi,\" with extra-time goals from homegrown midfielders Saul Niguez and Koke sealing a 4-2 UEFA Super Cup win over Real Madrid. It took just 49 seconds for Costa to rampage his way through the entire Madrid defence and hammer Atletico in front, with the equaliser near the half-hour mark coming when Gareth Bale's superb curling right-footed cross was deftly headed home by Karim Benzema.",
       "cardImage": "../src/components/main/Cards/atlMadrid.jpg",
-      "id": 4
+      "id": "4"
     },
     {
       "title": "Barcelona-Boca Juniors showcases South America's talent.",
       "content": "It would, of course, be silly to draw conclusions from a single, gentle preseason friendly, disputed by two teams a little short of full strength, and which inevitably turned into a parade of second-half substitutions. Even so, Barcelona's 3-0 win Wednesday over Boca Juniors provides more evidence toward a clear conclusion: how rich South American football is, and how poor the continent's club game has become.",
       "cardImage": "../src/components/main/Cards/barcaBoca.jpg",
-      "id": 5
-    },
-    {
-      "id": 6,
-      "title": "Test",
-      "content": "This is a test",
-      "cardImage": "../src/components/main/Cards/cr7.jpg"
-    },
-    {
-      "id": 7,
-      "title": "qweqwe",
-      "content": "qweqweqwe",
-      "cardImage": "../src/components/main/Cards/premier.png"
-    },
-    {
-      "id": 8,
-      "title": "qweqwe",
-      "content": "qweqwe",
-      "cardImage": "../src/components/main/Cards/manU.png"
+      "id": "5"
     }
   ],
   "album": [

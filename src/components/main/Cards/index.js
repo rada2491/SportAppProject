@@ -4,6 +4,7 @@ import {
   Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 import './style.scss';
+import { newType, newTypeDefault } from '../../../proptypes/index'
 
 const API = 'http://localhost:3000/news/'
 
@@ -13,7 +14,6 @@ class Cards extends React.Component {
     super(props);
     this.state = {
       modal: false,
-      modal2: false,
       data: []
     };
     this.toggle = this.toggle.bind(this);
@@ -70,5 +70,13 @@ class Cards extends React.Component {
     );
   }
 };
+
+Cards.propTypes = {
+  news: newType
+}
+
+Cards.defaultProps = {
+  news: newTypeDefault
+}
 
 export default Cards;

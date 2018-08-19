@@ -19,6 +19,7 @@ export default class Album extends React.Component {
   async componentDidMount() {
     const response = await fetch(API)
     const result = await response.json()
+    console.log('hola')
     this.setState({
       album: result
     })
