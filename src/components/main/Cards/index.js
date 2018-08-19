@@ -57,10 +57,10 @@ class Cards extends React.Component {
           </Card>
         <Modal isOpen={this.state.modal} modalTransition={{ timeout: 100 }} backdropTransition={{ timeout: 200 }}
           toggle={this.toggle} className={this.props.className}>
-          <CardImg top width="100%" src={data.cardImage} alt="Card image cap" />
-          <ModalHeader toggle={this.toggle}>{data.title}</ModalHeader>
+          <CardImg top width="100%" src={news.cardImage} alt="Card image cap" />
+          <ModalHeader toggle={this.toggle}>{news.title}</ModalHeader>
           <ModalBody>
-            {data.content}
+            {news.content}
           </ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={this.toggle}>Close</Button>
