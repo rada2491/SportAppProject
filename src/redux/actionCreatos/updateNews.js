@@ -26,7 +26,10 @@ export default function updateNews(newObj) {
         payload: result
       })
     } catch (error) {
-
+      dispatch({
+        type: a.NEWS_GETALL_FAILURE,
+        error: error
+      })
     }
   }
 }

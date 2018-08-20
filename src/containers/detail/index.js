@@ -22,7 +22,7 @@ class Details extends Component {
   }
 
   async componentWillReceiveProps(newProps) {
-    var id = newProps.url
+    let id = newProps.url
     if (id !== this.props.url) {
       this.props.getUpdatedInfo(id)
     }

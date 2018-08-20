@@ -1,11 +1,11 @@
 import * as a from '../actions/types'
 
-var API = 'http://api.football-data.org/v1/soccerseasons/'
-var APIEND = '/leagueTable'
+const API = 'http://api.football-data.org/v1/soccerseasons/'
+const APIEND = '/leagueTable'
 
-var API2 = 'http://localhost:3000/soccerseasons/'
+const API2 = 'http://localhost:3000/soccerseasons/'
 
-var myHeaders = new Headers({
+const myHeaders = new Headers({
   'Content-Type': 'application/json',
   'X-Auth-Token': '176d0f15e52c4479976af3e3a372afcb'
 });

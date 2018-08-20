@@ -8,9 +8,7 @@ import logo from './logo.png';
 
 import updateNews from '../../../redux/actionCreatos/updateNews'
 
-var id, newTitle, newContent, newImage, newId;
-
-const API = 'http://localhost:3000/news/'
+var newTitle, newContent, newImage, newId;
 
 class Header extends React.Component {
 
@@ -27,9 +25,9 @@ class Header extends React.Component {
 
   componentDidMount() {
 
-    var menuLeft = document.getElementById('cbp-spmenu-s1'),
+    let menuLeft = document.getElementById('cbp-spmenu-s1'),
       showLeftPush = document.getElementById('showLeftPushe');
-    var home = document.getElementById('contHome');
+      let home = document.getElementById('contHome');
 
     showLeftPush.onclick = function () {
       if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
@@ -46,9 +44,9 @@ class Header extends React.Component {
     };
 
     if (window.location.href === "http://localhost:8080/albums") {
-      var menuLeft = document.getElementById('cbp-spmenu-s1'),
+      let menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
-      var home = document.getElementById('contAlbum');
+      let home = document.getElementById('contAlbum');
       showLeftPush.onclick = function () {
 
         if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
@@ -68,9 +66,9 @@ class Header extends React.Component {
 
   componentDidUpdate() {
     if (window.location.href === "http://localhost:8080/") {
-      var menuLeft = document.getElementById('cbp-spmenu-s1'),
+      let menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
-      var main = document.getElementById('contHome');
+      let main = document.getElementById('contHome');
 
       if (menuLeft.classList.contains('cbp-spmenu-open')) {
         menuLeft.classList.remove('cbp-spmenu-open')
@@ -92,9 +90,9 @@ class Header extends React.Component {
       };
     }
     if (window.location.href === "http://localhost:8080/albums") {
-      var menuLeft = document.getElementById('cbp-spmenu-s1'),
+      let menuLeft = document.getElementById('cbp-spmenu-s1'),
         showLeftPush = document.getElementById('showLeftPushe');
-      var main = document.getElementById('contAlbum');
+      let main = document.getElementById('contAlbum');
 
       if (menuLeft.classList.contains('cbp-spmenu-open')) {
         menuLeft.classList.remove('cbp-spmenu-open')
@@ -130,7 +128,7 @@ class Header extends React.Component {
     newContent = document.getElementById('newContent').value;
     newImage = `../src/components/main/Cards/${document.getElementById('newImage').files[0].name}`;
 
-    var addNew = {
+    let addNew = {
       "id": newId.toString(), "title": newTitle, "content": newContent
       , "cardImage": newImage
     }
@@ -139,8 +137,6 @@ class Header extends React.Component {
     this.setState({
       modal: !this.state.modal
     })
-
-    //this.forceUpdate();
   }
 
   render() {

@@ -4,7 +4,7 @@ const API = 'http://api.football-data.org/v1/soccerseasons';
 
 const BACKUPAPI = 'http://localhost:3000/leagues';
 
-var myHeaders = new Headers({
+const myHeaders = new Headers({
   'Content-Type': 'application/json',
   'X-Auth-Token': '176d0f15e52c4479976af3e3a372afcb'
 });
@@ -22,7 +22,7 @@ export default function getAllLeagues() {
       })
       //const response = await fetch(BACKUPAPI)
       const result = await response.json()
-      var it = result.slice(0, 13);
+      let it = result.slice(0, 13);
 
       dispatch({
         type: a.ASIDE_GETALL_SUCCESS,
