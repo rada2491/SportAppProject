@@ -32,6 +32,15 @@
         text-decoration: underline !important;
     }
 
+    &__modal-title {
+        margin-bottom: 10px;
+        h5 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+}
+
     &__modal {
         padding: 10px;
     }

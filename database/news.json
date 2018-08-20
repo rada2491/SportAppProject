@@ -35,6 +35,12 @@
       "content": "It would, of course, be silly to draw conclusions from a single, gentle preseason friendly, disputed by two teams a little short of full strength, and which inevitably turned into a parade of second-half substitutions. Even so, Barcelona's 3-0 win Wednesday over Boca Juniors provides more evidence toward a clear conclusion: how rich South American football is, and how poor the continent's club game has become.",
       "cardImage": "../src/components/main/Cards/barcaBoca.jpg",
       "id": "5"
+    },
+    {
+      "id": 6,
+      "title": "Bill Hamid returning to D.C. United on loan after move to Europe",
+      "content": "D.C. United has struck a deal to re-sign Bill Hamid on loan, less than a year after the goalkeeper left to sign for Danish side Midtjylland. Hamid, the 2014 MLS Goalkeeper of the Year, will sign on loan through the end of the 2019 season, D.C.United said. With his MLS contract expiring after last season, Hamid opted to test himself in Europe and said he joined Midtjylland over an offer from Germany's Eintracht Frankfurt because he had an opportunity to start.",
+      "cardImage": "../src/components/main/Cards/bill.jpg"
     }
   ],
   "album": [
@@ -9502,8 +9508,8 @@
       "date": "2018-04-07T16:30:00Z",
       "status": "FINISHED",
       "matchday": 33,
-      "homeTeamName": "MCFC",
-      "awayTeamName": "MUFC",
+      "homeTeamName": "Manchester City",
+      "awayTeamName": "Mancherter United",
       "homeTeamLogo": "../src/Logos/MCFC.png",
       "awayTeamLogo": "../src/Logos/MUFC.png",
       "result": {
@@ -9516,8 +9522,8 @@
       "date": "2018-04-29T13:00:00Z",
       "status": "FINISHED",
       "matchday": 35,
-      "homeTeamName": "Int",
-      "awayTeamName": "JUVE",
+      "homeTeamName": "Internazionale Milano",
+      "awayTeamName": "Juventus",
       "homeTeamLogo": "../src/Logos/Int.png",
       "awayTeamLogo": "../src/Logos/JUVE.png",
       "result": {
@@ -9530,8 +9536,8 @@
       "date": "2018-05-06T18:45:00Z",
       "status": "FINISHED",
       "matchday": 36,
-      "homeTeamName": "BARCA",
-      "awayTeamName": "MAD",
+      "homeTeamName": "Barcelona",
+      "awayTeamName": "Real Madrid",
       "homeTeamLogo": "../src/Logos/BARCA.png",
       "awayTeamLogo": "../src/Logos/MAD.png",
       "result": {
@@ -9544,8 +9550,8 @@
       "date": "2018-03-31T16:30:00Z",
       "status": "FINISHED",
       "matchday": 28,
-      "homeTeamName": "FCB",
-      "awayTeamName": "BVB",
+      "homeTeamName": "Bayern München",
+      "awayTeamName": "Borussia Dortmund",
       "homeTeamLogo": "../src/Logos/FCB.png",
       "awayTeamLogo": "../src/Logos/BVB.png",
       "result": {
@@ -9558,8 +9564,8 @@
       "date": "2018-04-15T17:00:00Z",
       "status": "FINISHED",
       "matchday": 30,
-      "homeTeamName": "SLB",
-      "awayTeamName": "FCP",
+      "homeTeamName": "Benfica",
+      "awayTeamName": "FC Porto",
       "homeTeamLogo": "../src/Logos/SLB.png",
       "awayTeamLogo": "../src/Logos/FCP.png",
       "result": {

@@ -157,19 +157,18 @@ class Header extends React.Component {
                   <Nav className='SA-header__nav d-flex justify-content-end'>
                     <li><Link className="SA-header__nav-item" to='/'>Home</Link></li>
                     <li><a className="SA-header__nav-item" id='showLeftPushe' to='#'>Leagues</a></li>
-                    <li><a className="SA-header__nav-item">Videos</a></li>
                     <li><Link className="SA-header__nav-item" to='/albums'>Album</Link></li>
+                    <li><a className="SA-header__nav-item" onClick={this.openModal}>Add News</a></li>
                     <li><a className="SA-header__nav-item">About</a></li>
                   </Nav>
                 </div>
               </div>
             </div>
-            <Button onClick={this.openModal} className=' btn btn-link d-flex justify-content-center'>Add New</Button>
           </div>
         </div>
         <Modal isOpen={this.state.modal} modalTransition={{ timeout: 100 }} backdropTransition={{ timeout: 200 }}
           toggle={this.toggle} className={this.props.className} >
-          <ModalHeader>Add New</ModalHeader>
+          <ModalHeader className='SA-header__modal-title'>Add a recently news</ModalHeader>
           <ModalBody>
             <Form className='SA-header__modal'>
               <FormGroup row>
@@ -189,8 +188,8 @@ class Header extends React.Component {
                 <Input type="file" name="file" id="newImage" />
               </FormGroup>
               <ModalFooter>
-                <Button onClick={this.sendSubmit}>Submit</Button>
-                <Button onClick={this.openModal}>Close</Button>
+                <Button color='primary' onClick={this.sendSubmit}>Submit</Button>
+                <Button color='primary' onClick={this.openModal}>Close</Button>
               </ModalFooter>
             </Form>
           </ModalBody>

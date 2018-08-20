@@ -26,7 +26,7 @@ class Home extends Component {
   }
 
   newItemCreator = news => <Card key={news.id} news={news} />
-  newResultCreator = results => <Result key={results.id} results={results} />
+  newResultCreator = results => <Result key={results.id} results={results}/>
 
   render() {
     const { items } = this.props;

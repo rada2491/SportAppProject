@@ -1,27 +1,27 @@
-import 'babel-polyfill'
+import 'babel-polyfill';
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { BrowserRouter, Route } from 'react-router-dom'
-import { map } from 'ramda'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { map } from 'ramda';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import { Animated } from "react-animated-css";
-import './scss/animate.css'
+import './scss/animate.css';
 
 /* Font Awesome*/
 
-import Header from './components/header/nav/'
-import Aside from './components/main/Aside/'
-import Footer from './components/footer/'
+import Header from './components/header/nav/';
+import Aside from './components/main/Aside/';
+import Footer from './components/footer/';
 
+/* CSS */
 import './scss/main.scss';
 
 /* pages */
-import Home from './pages/home/'
-import Details from './pages/details/'
-import Album from './pages/album/'
-import Gallery from './pages/gallery/'
+import Home from './pages/home/';
+import Details from './pages/details/';
+import Album from './pages/album/';
+import Gallery from './pages/gallery/';
 
 /* Loading Image */
 import LoadingImage from './LoadingImage.png';

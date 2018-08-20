@@ -1,14 +1,40 @@
 .SA-Results {
 
-  &__home img,
-  &__away img
-  {
-    align-content: center;
-    width: 50px;
-    height: 50px;
+  background: #a2bdd84b;
+
+  &__home {
+     img {
+      position: relative;
+      width: 50px;
+      height: 50px;
+  }
+  }
+
+  &__away {
+    img
+    {
+      width: 50px;
+      height: 50px;
+    }
+  } 
+
+  &__container {
+    margin-top: 20px;
   }
 
   &__scoreboard h3{
+    text-align: center;
+  }
+
+  &__team {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 45px;
+    width: 100%;
+  }
+
+  &__status {
     text-align: center;
   }
 }
