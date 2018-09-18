@@ -1,0 +1,9 @@
+@media screen and (max-width: 413px) {
+  .SA-Results__logo-home {
+    left: 5px;
+  }
+
+  .SA-Results__logo-away {
+    left: 30px;
+  }
+}

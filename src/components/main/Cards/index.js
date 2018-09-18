@@ -39,13 +39,13 @@ class Cards extends React.Component {
 
   render() {
     const { data } = this.state;
-    const { news } = this.props
+    const { news } = this.props;
     return (
       <div>
-          <Card key={news.id} id={news.id} className='SA-CardDeck__card'>
+          <Card key={news.id.toString()} id={news.id} className='SA-CardDeck__card'>
             <CardImg top src={news.cardImage} alt="Card image cap" />
             <CardBody>
-              <CardTitle>{news.title}</CardTitle>
+              <CardTitle className='SA-CardDeck__card-title'>{news.title}</CardTitle>
               <Button
                 id='lastIndex'
                 value={news.id}
@@ -58,7 +58,7 @@ class Cards extends React.Component {
         <Modal isOpen={this.state.modal} modalTransition={{ timeout: 100 }} backdropTransition={{ timeout: 200 }}
           toggle={this.toggle} className={this.props.className}>
           <CardImg top width="100%" src={news.cardImage} alt="Card image cap" />
-          <ModalHeader toggle={this.toggle}>{news.title}</ModalHeader>
+          <ModalHeader className='SA-CardDeck__card-title' toggle={this.toggle}>{news.title}</ModalHeader>
           <ModalBody>
             {news.content}
           </ModalBody>

@@ -11,6 +11,7 @@
   }
 
   &__away {
+    margin: 0;
     img
     {
       width: 50px;
@@ -36,5 +37,24 @@
 
   &__status {
     text-align: center;
+  }
+
+  &__logo-home{}
+}
+
+
+@media screen and (min-width: 1600px) {
+  .SA-Results__logo-home {
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SA-Results__logo-home {
+    left: 5px;
+  }
+
+  .SA-Results__logo-away {
+    left: 30px;
   }
 }

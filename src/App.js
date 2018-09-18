@@ -51,7 +51,7 @@ class App extends Component {
       return (
         <BrowserRouter>
           <Animated animationIn="bounceInRight" animationOut="zoomOutDown" isVisible={true}>
-            <div className="App bounceInRight">
+            <div className="App">
               <Header />
               <div className="container-fluid">
                 <div className="row">

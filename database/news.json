@@ -37,9 +37,21 @@
       "id": "5"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Bill Hamid returning to D.C. United on loan after move to Europe",
       "content": "D.C. United has struck a deal to re-sign Bill Hamid on loan, less than a year after the goalkeeper left to sign for Danish side Midtjylland. Hamid, the 2014 MLS Goalkeeper of the Year, will sign on loan through the end of the 2019 season, D.C.United said. With his MLS contract expiring after last season, Hamid opted to test himself in Europe and said he joined Midtjylland over an offer from Germany's Eintracht Frankfurt because he had an opportunity to start.",
+      "cardImage": "../src/components/main/Cards/bill.jpg"
+    },
+    {
+      "id": "7",
+      "title": "test",
+      "content": "this is an example",
+      "cardImage": "../src/components/main/Cards/premier.png"
+    },
+    {
+      "id": "8",
+      "title": "Test",
+      "content": "This is a test",
       "cardImage": "../src/components/main/Cards/bill.jpg"
     }
   ],

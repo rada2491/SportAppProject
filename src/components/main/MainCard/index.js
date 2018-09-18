@@ -10,11 +10,11 @@ const mainCard = ({ newItem }) => {
       {
         newItem.map(item => {
           return (
-            <div>
+            <div key={item.id}>
               <CardImg top src={item.cardImage} alt="Card image cap"/>
-              <Card key={item.id} id={item.id} className=''>
+              <Card  id={item.id} className=''>
                 <CardBody className='SA-Main-New__body'>
-                  <CardTitle><h2>{item.title}</h2></CardTitle>
+                  <CardTitle className='SA-Main-New__title'>{item.title}</CardTitle>
                   <CardText>{item.content}</CardText>
                 </CardBody>
               </Card>

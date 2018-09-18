@@ -6,7 +6,7 @@ import './style.scss';
 
 import logo from './logo.png';
 
-import updateNews from '../../../redux/actionCreatos/updateNews'
+//import updateNews from '../../../redux/actionCreatos/updateNews'
 
 var newTitle, newContent, newImage, newId;
 
@@ -23,99 +23,6 @@ class Header extends React.Component {
   }
 
 
-  componentDidMount() {
-
-    let menuLeft = document.getElementById('cbp-spmenu-s1'),
-      showLeftPush = document.getElementById('showLeftPushe');
-      let home = document.getElementById('contHome');
-
-    showLeftPush.onclick = function () {
-      if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
-        menuLeft.classList.add('cbp-spmenu-open')
-      } else {
-        menuLeft.classList.remove('cbp-spmenu-open')
-      }
-
-      if (!(home.classList.contains('cbp-spmenu-push-toright'))) {
-        home.classList.add('cbp-spmenu-push-toright')
-      } else {
-        home.classList.remove('cbp-spmenu-push-toright')
-      }
-    };
-
-    if (window.location.href === "http://localhost:8080/albums") {
-      let menuLeft = document.getElementById('cbp-spmenu-s1'),
-        showLeftPush = document.getElementById('showLeftPushe');
-      let home = document.getElementById('contAlbum');
-      showLeftPush.onclick = function () {
-
-        if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
-          menuLeft.classList.add('cbp-spmenu-open')
-        } else {
-          menuLeft.classList.remove('cbp-spmenu-open')
-        }
-
-        if (!(home.classList.contains('cbp-spmenu-push-toright'))) {
-          home.classList.add('cbp-spmenu-push-toright')
-        } else {
-          home.classList.remove('cbp-spmenu-push-toright')
-        }
-      };
-    }
-  }
-
-  componentDidUpdate() {
-    if (window.location.href === "http://localhost:8080/") {
-      let menuLeft = document.getElementById('cbp-spmenu-s1'),
-        showLeftPush = document.getElementById('showLeftPushe');
-      let main = document.getElementById('contHome');
-
-      if (menuLeft.classList.contains('cbp-spmenu-open')) {
-        menuLeft.classList.remove('cbp-spmenu-open')
-      }
-
-      showLeftPush.onclick = function () {
-
-        if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
-          menuLeft.classList.add('cbp-spmenu-open')
-        } else {
-          menuLeft.classList.remove('cbp-spmenu-open')
-        }
-
-        if (!(main.classList.contains('cbp-spmenu-push-toright'))) {
-          main.classList.add('cbp-spmenu-push-toright')
-        } else {
-          main.classList.remove('cbp-spmenu-push-toright')
-        }
-      };
-    }
-    if (window.location.href === "http://localhost:8080/albums") {
-      let menuLeft = document.getElementById('cbp-spmenu-s1'),
-        showLeftPush = document.getElementById('showLeftPushe');
-      let main = document.getElementById('contAlbum');
-
-      if (menuLeft.classList.contains('cbp-spmenu-open')) {
-        menuLeft.classList.remove('cbp-spmenu-open')
-      }
-
-      showLeftPush.onclick = function () {
-
-        if (!(menuLeft.classList.contains('cbp-spmenu-open'))) {
-          menuLeft.classList.add('cbp-spmenu-open')
-        } else {
-          menuLeft.classList.remove('cbp-spmenu-open')
-        }
-
-        if (!(main.classList.contains('cbp-spmenu-push-toright'))) {
-          main.classList.add('cbp-spmenu-push-toright')
-        } else {
-          main.classList.remove('cbp-spmenu-push-toright')
-        }
-      };
-    }
-
-  }
-
   openModal() {
     this.setState({
       modal: !this.state.modal
@@ -123,7 +30,7 @@ class Header extends React.Component {
   }
 
   sendSubmit() {
-    newId = this.props.items.length
+   /* newId = this.props.items.length
     newTitle = document.getElementById('newTitle').value;
     newContent = document.getElementById('newContent').value;
     newImage = `../src/components/main/Cards/${document.getElementById('newImage').files[0].name}`;
@@ -136,7 +43,7 @@ class Header extends React.Component {
     this.props.updateNews(addNew)
     this.setState({
       modal: !this.state.modal
-    })
+    })*/
   }
 
   render() {
@@ -155,7 +62,6 @@ class Header extends React.Component {
                     <li><a className="SA-header__nav-item" id='showLeftPushe' to='#'>Leagues</a></li>
                     <li><Link className="SA-header__nav-item" to='/albums'>Album</Link></li>
                     <li><a className="SA-header__nav-item" onClick={this.openModal}>Add News</a></li>
-                    <li><a className="SA-header__nav-item">About</a></li>
                   </Nav>
                 </div>
               </div>
@@ -196,11 +102,11 @@ class Header extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  items: state.news.news
+  //items: state.news.news
 })
 
 const mapDispatchToProps = {
-  updateNews
+  //updateNews
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

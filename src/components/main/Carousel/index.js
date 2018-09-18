@@ -6,7 +6,7 @@ import './style.scss';
 import bbva from './bbva.png';
 import serieA from './Serie-A.png';
 import bundes from './bundesliga.png';
-import champ from './champions-league.png';
+import ered from './Eredivisie.png';
 import premi from './pre-lea.png';
 
 const items = [
@@ -26,7 +26,7 @@ const items = [
     caption: ''
   },
   {
-    src: champ,
+    src: ered,
     altText: 'Slide 4',
     caption: ''
   },

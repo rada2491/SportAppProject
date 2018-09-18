@@ -49,7 +49,7 @@ class Home extends Component {
               {map(this.newResultCreator, res)}
             </ListGroup>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-12 col-sm-12 col-xs-12 SA-Main__news">
             <CardDeck className='d-flex justify-content-around SA-CardDeck'>
               {map(this.newItemCreator, items.slice(1))}
             </CardDeck>
